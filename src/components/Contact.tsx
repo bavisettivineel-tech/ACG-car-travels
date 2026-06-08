@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 
 const cards = [
-  { icon: Phone, label: "Phone / Call", value: "+91 90008 38395", link: "tel:+919000838395" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+91 90008 38395", link: "https://wa.me/919000838395" },
-  { icon: MapPin, label: "Address", value: "Somalamma temple street, beside unionbank, Pro. Ragampeta, Andhra Pradesh 533435" },
+  { icon: Phone, label: "Phone / Call", value: "+91 63036 63911", link: "tel:+916303663911" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91 63036 63911", link: "https://wa.me/916303663911" },
+  { icon: MapPin, label: "Address", value: "Pithapuram, Andhra Pradesh 533450" },
   { icon: Clock, label: "Working Hours", value: "Open 24 Hours · 7 Days a Week", highlight: true },
 ];
 
@@ -51,8 +51,8 @@ export function Contact() {
           className="border border-gold/20 overflow-hidden h-full min-h-[400px]"
         >
           <iframe
-            title="Sri Satyadeva Car Travels — Pro. Ragampeta"
-            src="https://www.google.com/maps?q=Somalamma+temple+street,+beside+unionbank,+Pro.+Ragampeta,+Andhra+Pradesh+533435&output=embed"
+            title="Sai Ram Car Travels — Pithapuram"
+            src="https://www.google.com/maps?q=Pithapuram,+Andhra+Pradesh+533450&output=embed"
             className="w-full h-full min-h-[400px]"
             style={{ filter: "grayscale(0.6) invert(0.92) hue-rotate(180deg)" }}
             loading="lazy"

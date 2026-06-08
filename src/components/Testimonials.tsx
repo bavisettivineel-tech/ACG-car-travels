@@ -4,23 +4,23 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Excellent service! The driver was very professional and reached on time. The car was clean and comfortable. Highly recommend Sri Satyadeva Car Travels for any trip.",
+    text: "Excellent service! The driver was very professional and reached on time. The car was clean and comfortable. Highly recommend Sai Ram Car Travels for any trip.",
     name: "Ravi Kumar",
-    location: "Ragampeta",
+    location: "Pithapuram",
     source: "Google Review",
     initial: "R",
   },
   {
     text: "Booked for my wedding and they exceeded all expectations. Beautiful decorated cars, punctual service, and the driver was very cooperative throughout the event.",
     name: "Priya Reddy",
-    location: "Ragampeta",
+    location: "Pithapuram",
     source: "Google Review",
     initial: "P",
   },
   {
     text: "Used their service for Hyderabad outstation. Comfortable Innova, experienced driver who knew all the routes well. Reached safely and on time. Will definitely book again.",
     name: "Suresh Babu",
-    location: "Ragampeta",
+    location: "Pithapuram",
     source: "Google Review",
     initial: "S",
   },

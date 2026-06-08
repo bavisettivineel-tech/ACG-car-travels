@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://srisatyadevacartravels.vercel.app/sitemap.xml
+Sitemap: https://sairamcartravels.vercel.app/sitemap.xml
 
 User-agent: Googlebot
 Allow: /

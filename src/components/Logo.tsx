@@ -22,7 +22,7 @@ export function Logo({ size = 1 }: { size?: number }) {
         <rect x="6" y="24" width="24" height="2" fill="url(#logoGold)" />
       </svg>
       <div className="flex flex-col leading-none">
-        <span className="font-display font-black text-gold text-lg tracking-wide">SRI SATYADEVA</span>
+        <span className="font-display font-black text-gold text-lg tracking-wide">SAI RAM</span>
         <span className="font-body text-[10px] tracking-[0.4em] text-gold/70">CAR TRAVELS</span>
       </div>
     </div>

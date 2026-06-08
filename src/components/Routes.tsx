@@ -26,7 +26,7 @@ export function Routes() {
     <Section id="routes" label="Destinations" title="Where We Take You" bgClass="bg-[#050505]">
       <div className="flex justify-center mb-12">
         <div className="clip-parallelogram gold-gradient text-black font-bold uppercase tracking-widest px-8 py-3 text-sm gold-glow">
-          Pro. Ragampeta · Your Starting Point
+          Pithapuram · Your Starting Point
         </div>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -39,7 +39,7 @@ export function Routes() {
             transition={{ duration: 0.5, delay: i * 0.05 }}
             className="group relative bg-[#0f0f0f] border border-gold/15 p-6 hover:border-gold/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
           >
-            <div className="text-[10px] uppercase tracking-[0.3em] text-foreground/50">From Pro. Ragampeta</div>
+            <div className="text-[10px] uppercase tracking-[0.3em] text-foreground/50">From Pithapuram</div>
             <div className="flex items-center gap-3 mt-3">
               <ArrowRight size={20} className="text-gold" />
               <h3 className="font-display text-2xl text-foreground">{r.to}</h3>
