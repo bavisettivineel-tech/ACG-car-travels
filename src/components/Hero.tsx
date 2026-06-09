@@ -66,7 +66,7 @@ export function Hero() {
         >
           <img
             src={heroCar}
-            alt="Toyota Fortuner luxury SUV — Sree Siva Ganesh Travels premium fleet"
+            alt="Toyota Fortuner luxury SUV — ACG Car Travels premium fleet"
             width={1920}
             height={1280}
             className="w-full h-full object-cover object-center select-none pointer-events-none"
@@ -105,7 +105,7 @@ export function Hero() {
             className="font-display font-black mt-6 leading-[0.92]"
             style={{ fontSize: "clamp(44px, 9vw, 110px)" }}
           >
-            <span className="block gold-text-gradient drop-shadow-[0_4px_30px_rgba(201,168,76,0.3)]">SREE SIVA GANESH</span>
+            <span className="block gold-text-gradient drop-shadow-[0_4px_30px_rgba(201,168,76,0.3)]">ACG CAR</span>
             <span className="block text-stroke-gold">TRAVELS</span>
           </motion.h1>
 

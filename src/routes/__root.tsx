@@ -69,24 +69,24 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
-    title: "Sree Siva Ganesh Travels | Premium Car Rentals 24/7 | 9949394555",
+    title: "ACG Car Travels | Premium Car Rentals 24/7 | 7382352666",
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         name: "description",
         content:
-          "Sree Siva Ganesh Travels — Amalapuram's most trusted car rental service. Sedan, SUV, Innova, Tempo Traveller, Luxury cars. Outstation, Airport, Wedding, Tours. Open 24/7. Call +91 9949394555.",
+          "ACG Car Travels — Amalapuram's most trusted car rental service. Sedan, SUV, Innova, Tempo Traveller, Luxury cars. Outstation, Airport, Wedding, Tours. Open 24/7. Call +91 7382352666.",
       },
       {
         name: "keywords",
         content:
-          "car rental amalapuram, sree siva ganesh travels, innova crysta amalapuram, outstation cab amalapuram, airport transfer andhra pradesh, tempo traveller amalapuram, cab service 533201",
+          "car rental amalapuram, acg car travels, innova crysta amalapuram, outstation cab amalapuram, airport transfer andhra pradesh, tempo traveller amalapuram, cab service 533201",
       },
-      { property: "og:title", content: "Sree Siva Ganesh Travels Amalapuram | Premium Car Rentals 24/7" },
+      { property: "og:title", content: "ACG Car Travels Amalapuram | Premium Car Rentals 24/7" },
       {
         property: "og:description",
-        content: "Amalapuram's most trusted car rental — Sedan, SUV, Innova, Tempo, Luxury. Open 24/7. Call +91 9949394555.",
+        content: "Amalapuram's most trusted car rental — Sedan, SUV, Innova, Tempo, Luxury. Open 24/7. Call +91 7382352666.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -22,7 +22,7 @@ export function About() {
           transition={{ duration: 0.7 }}
         >
           <p className="text-foreground/70 text-lg leading-relaxed mb-8">
-            Sree Siva Ganesh Travels is Amalapuram's most trusted car rental &amp; cab service, proudly serving
+            ACG Car Travels is Amalapuram's most trusted car rental &amp; cab service, proudly serving
             passengers across Andhra Pradesh and Telangana. From local city drops and outstation trips
             to airport transfers, wedding cars, and tour packages — we deliver every journey with
             professionalism, comfort, and care. Whether you need a Sedan, Innova Crysta, Tempo Traveller,

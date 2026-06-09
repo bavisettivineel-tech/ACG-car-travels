@@ -4,7 +4,7 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Excellent service! The driver was very professional and reached on time. The car was clean and comfortable. Highly recommend Sree Siva Ganesh Travels for any trip.",
+    text: "Excellent service! The driver was very professional and reached on time. The car was clean and comfortable. Highly recommend ACG Car Travels for any trip.",
     name: "Ravi Kumar",
     location: "Amalapuram",
     source: "Google Review",

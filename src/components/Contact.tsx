@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 
 const cards = [
-  { icon: Phone, label: "Phone / Call", value: "+91 99493 94555", link: "tel:+919949394555" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+91 99493 94555", link: "https://wa.me/919949394555" },
-  { icon: MapPin, label: "Address", value: "Amalapuram, Cinema Road, Chinna Car Stand, Amalapuram, Andhra Pradesh" },
+  { icon: Phone, label: "Phone / Call", value: "+91 73823 52666", link: "tel:+917382352666" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91 73823 52666", link: "https://wa.me/917382352666" },
+  { icon: MapPin, label: "Address", value: "Door No: 5-2, 147, Sriramapuram, Amalapuram, Andhra Pradesh" },
   { icon: Clock, label: "Working Hours", value: "Open 24 Hours · 7 Days a Week", highlight: true },
 ];
 
@@ -51,8 +51,8 @@ export function Contact() {
           className="border border-gold/20 overflow-hidden h-full min-h-[400px]"
         >
           <iframe
-            title="Sree Siva Ganesh Travels — Amalapuram"
-            src="https://www.google.com/maps?q=cinema+road,+chinna+car+stand,+amalapuram,+andhra+pradesh&output=embed"
+            title="ACG Car Travels — Amalapuram"
+            src="https://www.google.com/maps?q=Door+No:+5-2,+147,+Sriramapuram,+Amalapuram,+Andhra+Pradesh&output=embed"
             className="w-full h-full min-h-[400px]"
             style={{ filter: "grayscale(0.6) invert(0.92) hue-rotate(180deg)" }}
             loading="lazy"

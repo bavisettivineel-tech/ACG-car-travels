@@ -53,7 +53,7 @@ export function Packages() {
     <Section id="packages" label="Packages" title="Every Journey Covered">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {packages.map((p, i) => {
-          const link = `https://wa.me/919949394555?text=${encodeURIComponent(p.msg)}`;
+          const link = `https://wa.me/917382352666?text=${encodeURIComponent(p.msg)}`;
           return (
             <motion.div
               key={p.name}
