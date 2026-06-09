@@ -26,7 +26,7 @@ const cars: CarItem[] = [
     features: ["AC", "Music System", "GPS"],
     price: "₹12/km",
     image: sedanImg,
-    whatsapp: "Hi, I want to book a Sedan from Indhra Kheladri Travels",
+    whatsapp: "Hi, I want to book a Sedan from Sree Siva Ganesh Travels",
   },
   {
     type: "Premium Class",
@@ -36,7 +36,7 @@ const cars: CarItem[] = [
     features: ["AC", "Push-back Seats", "Music", "GPS"],
     price: "₹16/km",
     image: innovaImg,
-    whatsapp: "Hi, I want to book an Innova Crysta from Indhra Kheladri Travels",
+    whatsapp: "Hi, I want to book an Innova Crysta from Sree Siva Ganesh Travels",
   },
   {
     type: "Group Travel",
@@ -46,7 +46,7 @@ const cars: CarItem[] = [
     features: ["AC", "Push-back Seats", "Music", "Luggage Space"],
     price: "₹22/km",
     image: tempoImg,
-    whatsapp: "Hi, I want to book a Tempo Traveller from Indhra Kheladri Travels",
+    whatsapp: "Hi, I want to book a Tempo Traveller from Sree Siva Ganesh Travels",
   },
   {
     type: "Family MPV",
@@ -56,7 +56,7 @@ const cars: CarItem[] = [
     features: ["AC", "Push-back Seats", "Music", "Boot Space"],
     price: "₹14/km",
     image: ertigaImg,
-    whatsapp: "Hi, I want to book a Maruti Ertiga from Indhra Kheladri Travels",
+    whatsapp: "Hi, I want to book a Maruti Ertiga from Sree Siva Ganesh Travels",
   },
   {
     type: "Compact Sedan",
@@ -66,12 +66,12 @@ const cars: CarItem[] = [
     features: ["AC", "Music System", "GPS", "Comfort Seats"],
     price: "₹13/km",
     image: amazeImg,
-    whatsapp: "Hi, I want to book a Honda Amaze from Indhra Kheladri Travels",
+    whatsapp: "Hi, I want to book a Honda Amaze from Sree Siva Ganesh Travels",
   },
 ];
 
 function CarCard({ car, index }: { car: CarItem; index: number }) {
-  const link = `https://wa.me/917569239382?text=${encodeURIComponent(car.whatsapp)}`;
+  const link = `https://wa.me/919949394555?text=${encodeURIComponent(car.whatsapp)}`;
 
   return (
     <motion.div

@@ -69,24 +69,24 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
-    title: "Indhra Kheladri Travels | Premium Car Rentals 24/7 | 75692 39382",
+    title: "Sree Siva Ganesh Travels | Premium Car Rentals 24/7 | 9949394555",
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         name: "description",
         content:
-          "Indhra Kheladri Travels — Jaggampeta's most trusted car rental service. Sedan, SUV, Innova, Tempo Traveller, Luxury cars. Outstation, Airport, Wedding, Tours. Open 24/7. Call +91 75692 39382.",
+          "Sree Siva Ganesh Travels — Amalapuram's most trusted car rental service. Sedan, SUV, Innova, Tempo Traveller, Luxury cars. Outstation, Airport, Wedding, Tours. Open 24/7. Call +91 9949394555.",
       },
       {
         name: "keywords",
         content:
-          "car rental jaggampeta, indhra kheladri travels, innova crysta jaggampeta, outstation cab jaggampeta, airport transfer andhra pradesh, tempo traveller jaggampeta, cab service 533435",
+          "car rental amalapuram, sree siva ganesh travels, innova crysta amalapuram, outstation cab amalapuram, airport transfer andhra pradesh, tempo traveller amalapuram, cab service 533201",
       },
-      { property: "og:title", content: "Indhra Kheladri Travels Jaggampeta | Premium Car Rentals 24/7" },
+      { property: "og:title", content: "Sree Siva Ganesh Travels Amalapuram | Premium Car Rentals 24/7" },
       {
         property: "og:description",
-        content: "Jaggampeta's most trusted car rental — Sedan, SUV, Innova, Tempo, Luxury. Open 24/7. Call +91 75692 39382.",
+        content: "Amalapuram's most trusted car rental — Sedan, SUV, Innova, Tempo, Luxury. Open 24/7. Call +91 9949394555.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

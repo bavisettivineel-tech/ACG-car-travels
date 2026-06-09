@@ -66,7 +66,7 @@ export function Hero() {
         >
           <img
             src={heroCar}
-            alt="Toyota Fortuner luxury SUV — Indhra Kheladri Travels premium fleet"
+            alt="Toyota Fortuner luxury SUV — Sree Siva Ganesh Travels premium fleet"
             width={1920}
             height={1280}
             className="w-full h-full object-cover object-center select-none pointer-events-none"
@@ -94,7 +94,7 @@ export function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
             </span>
             <span className="text-[10px] sm:text-xs uppercase tracking-widest text-gold">
-              ★ 5.0 Rated · Open 24 Hours · Jaggampeta
+              ★ 5.0 Rated · Open 24 Hours · Amalapuram
             </span>
           </motion.div>
 
@@ -105,7 +105,7 @@ export function Hero() {
             className="font-display font-black mt-6 leading-[0.92]"
             style={{ fontSize: "clamp(44px, 9vw, 110px)" }}
           >
-            <span className="block gold-text-gradient drop-shadow-[0_4px_30px_rgba(201,168,76,0.3)]">INDHRA KHELADRI</span>
+            <span className="block gold-text-gradient drop-shadow-[0_4px_30px_rgba(201,168,76,0.3)]">SREE SIVA GANESH</span>
             <span className="block text-stroke-gold">TRAVELS</span>
           </motion.h1>
 
@@ -115,7 +115,7 @@ export function Hero() {
             transition={{ delay: 1.1, duration: 0.8 }}
             className="font-accent italic text-lg md:text-2xl mt-4 text-gold/85"
           >
-            Premium Car Rentals · Jaggampeta, Andhra Pradesh
+            Premium Car Rentals · Amalapuram, Andhra Pradesh
           </motion.p>
 
           <motion.div
