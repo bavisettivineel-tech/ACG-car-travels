@@ -13,7 +13,7 @@ const cards = [
 
 export function About() {
   return (
-    <Section id="about" label="About Us" title="Pithapuram's Most Trusted Car Service">
+    <Section id="about" label="About Us" title="Jaggampeta's Most Trusted Car Service">
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -22,12 +22,12 @@ export function About() {
           transition={{ duration: 0.7 }}
         >
           <p className="text-foreground/70 text-lg leading-relaxed mb-8">
-            Sai Ram Car Travels is Pithapuram's most trusted car rental &amp; cab service, proudly serving
+            Indhra Kheladri Travels is Jaggampeta's most trusted car rental &amp; cab service, proudly serving
             passengers across Andhra Pradesh and Telangana. From local city drops and outstation trips
             to airport transfers, wedding cars, and tour packages — we deliver every journey with
             professionalism, comfort, and care. Whether you need a Sedan, Innova Crysta, Tempo Traveller,
             Maruti Ertiga, or Honda Amaze, our well-maintained AC fleet is available 24/7. Covering
-            Pithapuram to Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Rajahmundry and beyond.
+            Jaggampeta to Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Rajahmundry and beyond.
           </p>
           <div className="border border-gold/40 bg-black/40 p-6 rounded-lg flex items-center gap-6">
             <div>

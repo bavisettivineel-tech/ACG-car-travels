@@ -26,7 +26,7 @@ export function Booking() {
 
   function submit(e: React.FormEvent) {
     e.preventDefault();
-    const msg = `*New Booking — Sai Ram Car Travels*` +
+    const msg = `*New Booking — Indhra Kheladri Travels*` +
       `*Name:* ${form.name}%0A` +
       `*Phone:* ${form.phone}%0A` +
       `*Trip Type:* ${form.tripType}%0A` +
@@ -36,7 +36,7 @@ export function Booking() {
       `*Date:* ${form.date}%0A` +
       `*Time:* ${form.time}%0A` +
       `*Notes:* ${form.notes}`;
-    window.open(`https://wa.me/916303663911?text=${msg}`, "_blank");
+    window.open(`https://wa.me/917569239382?text=${msg}`, "_blank");
   }
 
   const inputCls =

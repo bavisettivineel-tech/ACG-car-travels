@@ -15,7 +15,7 @@ const items = [
 
 export function WhyUs() {
   return (
-    <Section id="why" label="Why Choose Us" title="The Sai Ram Car Travels Difference">
+    <Section id="why" label="Why Choose Us" title="The Indhra Kheladri Travels Difference">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {items.map((it, i) => (
           <motion.div

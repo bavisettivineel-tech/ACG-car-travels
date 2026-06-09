@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 
 const cards = [
-  { icon: Phone, label: "Phone / Call", value: "+91 63036 63911", link: "tel:+916303663911" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+91 63036 63911", link: "https://wa.me/916303663911" },
-  { icon: MapPin, label: "Address", value: "Pithapuram, Andhra Pradesh 533450" },
+  { icon: Phone, label: "Phone / Call", value: "+91 75692 39382", link: "tel:+917569239382" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91 75692 39382", link: "https://wa.me/917569239382" },
+  { icon: MapPin, label: "Address", value: "Jaggampeta, Andhra Pradesh" },
   { icon: Clock, label: "Working Hours", value: "Open 24 Hours · 7 Days a Week", highlight: true },
 ];
 
@@ -51,8 +51,8 @@ export function Contact() {
           className="border border-gold/20 overflow-hidden h-full min-h-[400px]"
         >
           <iframe
-            title="Sai Ram Car Travels — Pithapuram"
-            src="https://www.google.com/maps?q=Pithapuram,+Andhra+Pradesh+533450&output=embed"
+            title="Indhra Kheladri Travels — Jaggampeta"
+            src="https://www.google.com/maps?q=Jaggampeta,+Andhra+Pradesh&output=embed"
             className="w-full h-full min-h-[400px]"
             style={{ filter: "grayscale(0.6) invert(0.92) hue-rotate(180deg)" }}
             loading="lazy"

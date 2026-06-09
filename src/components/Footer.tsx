@@ -6,27 +6,27 @@ export function Footer() {
     <footer className="bg-[#020202] border-t border-gold/15 pt-16 pb-6 grain relative">
       {/* SEO keyword block — screen-reader & crawler friendly */}
       <div className="sr-only" aria-hidden="true">
-        Sai Ram Car Travels — best car rental service in Pithapuram, Kakinada, Andhra Pradesh.
-        Book outstation cab from Pithapuram to Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Rajahmundry.
-        Toyota Innova Crysta hire Pithapuram. Tempo Traveller booking Pithapuram. Sedan taxi Pithapuram.
-        Airport transfer Rajahmundry airport. Airport cab Vizag airport. Wedding car rental Pithapuram.
-        Corporate cab service Pithapuram. 24 hour taxi Pithapuram. Local cab Pithapuram. Tour packages Pithapuram.
-        Araku Valley tour from Pithapuram. Tirupati tour cab Pithapuram. East Godavari car travels.
-        Best travels in Pithapuram. Pithapuram cab booking WhatsApp. Sai Ram car travels.
-        Call +91 63036 63911. sairamcartravels.vercel.app
+        Indhra Kheladri Travels — best car rental service in Jaggampeta, Kakinada, Andhra Pradesh.
+        Book outstation cab from Jaggampeta to Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Rajahmundry.
+        Toyota Innova Crysta hire Jaggampeta. Tempo Traveller booking Jaggampeta. Sedan taxi Jaggampeta.
+        Airport transfer Rajahmundry airport. Airport cab Vizag airport. Wedding car rental Jaggampeta.
+        Corporate cab service Jaggampeta. 24 hour taxi Jaggampeta. Local cab Jaggampeta. Tour packages Jaggampeta.
+        Araku Valley tour from Jaggampeta. Tirupati tour cab Jaggampeta. East Godavari car travels.
+        Best travels in Jaggampeta. Jaggampeta cab booking WhatsApp. Indhra Kheladri travels.
+        Call +91 75692 39382. indhrakheladritravels.vercel.app
       </div>
       <div className="max-w-7xl mx-auto px-5">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
             <Logo />
             <p className="mt-4 text-sm text-foreground/55 leading-relaxed">
-              Premium car rental services in Pithapuram, Andhra Pradesh — serving passengers across AP and Telangana with 5-star care.
+              Premium car rental services in Jaggampeta, Andhra Pradesh — serving passengers across AP and Telangana with 5-star care.
             </p>
             <div className="flex gap-3 mt-5">
-              <a href="https://wa.me/916303663911" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-colors">
+              <a href="https://wa.me/917569239382" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-colors">
                 <MessageCircle size={18} />
               </a>
-              <a href="tel:+916303663911" className="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-colors">
+              <a href="tel:+917569239382" className="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-colors">
                 <Phone size={18} />
               </a>
             </div>
@@ -61,10 +61,10 @@ export function Footer() {
         </div>
 
         <div className="pt-6 border-t border-gold/10 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-foreground/40">
-          <div>© 2026 Sai Ram Car Travels, Pithapuram. All rights reserved.</div>
+          <div>© 2026 Indhra Kheladri Travels, Jaggampeta. All rights reserved.</div>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1 text-gold"><Star size={12} fill="currentColor" /> 5.0 · 58 Reviews</span>
-            <a href="tel:+916303663911" className="text-gold hover:text-gold-light">+91 63036 63911</a>
+            <a href="tel:+917569239382" className="text-gold hover:text-gold-light">+91 75692 39382</a>
           </div>
         </div>
       </div>

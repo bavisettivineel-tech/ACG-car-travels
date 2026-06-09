@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sairamcartravels.vercel.app/sitemap.xml
+Sitemap: https://indhrakheladritravels.vercel.app/sitemap.xml
 
 User-agent: Googlebot
 Allow: /

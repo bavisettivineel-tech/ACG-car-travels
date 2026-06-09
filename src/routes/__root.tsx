@@ -69,24 +69,24 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
+    title: "Indhra Kheladri Travels | Premium Car Rentals 24/7 | 75692 39382",
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sana Car Travels Ramanayyapeta | Premium Car Rentals 24/7 | 082971 23123" },
       {
         name: "description",
         content:
-          "Sana Car Travels — Ramanayyapeta's most trusted car rental service. 4.8 star rated with 213 reviews. Sedan, SUV, Innova, Tempo Traveller, Luxury cars. Outstation, Airport, Wedding, Tours. Open 24/7. Call 082971 23123.",
+          "Indhra Kheladri Travels — Jaggampeta's most trusted car rental service. Sedan, SUV, Innova, Tempo Traveller, Luxury cars. Outstation, Airport, Wedding, Tours. Open 24/7. Call +91 75692 39382.",
       },
       {
         name: "keywords",
         content:
-          "car rental ramanayyapeta, sana car travels, innova crysta ramanayyapeta, outstation cab ramanayyapeta, airport transfer andhra pradesh, tempo traveller ramanayyapeta, cab service 533003",
+          "car rental jaggampeta, indhra kheladri travels, innova crysta jaggampeta, outstation cab jaggampeta, airport transfer andhra pradesh, tempo traveller jaggampeta, cab service 533435",
       },
-      { property: "og:title", content: "Sana Car Travels Ramanayyapeta | Premium Car Rentals 24/7" },
+      { property: "og:title", content: "Indhra Kheladri Travels Jaggampeta | Premium Car Rentals 24/7" },
       {
         property: "og:description",
-        content: "Ramanayyapeta's most trusted 4.8★ rated car rental — Sedan, SUV, Innova, Tempo, Luxury. Open 24/7. Call 082971 23123.",
+        content: "Jaggampeta's most trusted car rental — Sedan, SUV, Innova, Tempo, Luxury. Open 24/7. Call +91 75692 39382.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
