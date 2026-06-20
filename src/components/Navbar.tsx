@@ -31,11 +31,13 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-5 flex items-center justify-between">
           <a href="#hero"><Logo /></a>
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8" aria-label="ACG Car Travels main navigation">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
+                title={`ACG Car Travels — ${l.label}`}
+                aria-label={`Navigate to ${l.label} section — ACG Car Travels`}
                 className="text-sm font-body uppercase tracking-widest text-foreground/80 hover:text-gold transition-colors relative group"
               >
                 {l.label}
@@ -44,6 +46,8 @@ export function Navbar() {
             ))}
             <a
               href="#booking"
+              title="Book a Cab — ACG Car Travels Amalapuram"
+              aria-label="Book a cab with ACG Car Travels in Amalapuram"
               className="px-5 py-2 border border-gold text-gold uppercase tracking-widest text-xs font-bold hover:bg-gold hover:text-black transition-all clip-parallelogram"
             >
               Book Now

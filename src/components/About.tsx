@@ -13,7 +13,7 @@ const cards = [
 
 export function About() {
   return (
-    <Section id="about" label="About Us" title="Amalapuram's Most Trusted Car Service">
+    <Section id="about" label="About Us" title="Amalapuram's Most Trusted Car Travels">
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -21,30 +21,35 @@ export function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-foreground/70 text-lg leading-relaxed mb-8">
-            ACG Car Travels is Amalapuram's most trusted car rental &amp; cab service, proudly serving
-            passengers across Andhra Pradesh and Telangana. From local city drops and outstation trips
+          <p className="text-foreground/70 text-lg leading-relaxed mb-6" itemProp="description">
+            <strong>ACG Car Travels</strong> is Amalapuram's most trusted car rental &amp; cab service, proudly serving
+            passengers across Andhra Pradesh and Telangana since years. From local city drops and outstation trips
             to airport transfers, wedding cars, and tour packages — we deliver every journey with
-            professionalism, comfort, and care. Whether you need a Sedan, Innova Crysta, Tempo Traveller,
-            Maruti Ertiga, Maruti Dzire, Maruti Baleno, Toyota Glanza, or Force Urbania, our well-maintained AC fleet is available 24/7. Covering
-            Amalapuram to Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Rajahmundry and beyond.
+            professionalism, comfort, and care. Whether you need a <strong>Sedan</strong>, <strong>Innova Crysta</strong>, <strong>Tempo Traveller</strong>,
+            <strong>Maruti Ertiga</strong>, <strong>Maruti Dzire</strong>, <strong>Maruti Baleno</strong>, <strong>Toyota Glanza</strong>, or <strong>Force Urbania</strong>, our well-maintained AC fleet is available 24/7.
           </p>
-          <div className="border border-gold/40 bg-black/40 p-6 rounded-lg flex items-center gap-6">
-            <div>
-              <div className="font-display text-6xl text-gold leading-none">5.0</div>
-              <div className="flex gap-1 mt-2 text-gold">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={18} fill="currentColor" />
-                ))}
+          <p className="text-foreground/70 text-base leading-relaxed mb-8">
+            Covering <strong>Amalapuram</strong> to <strong>Hyderabad</strong>, <strong>Visakhapatnam (Vizag)</strong>, <strong>Vijayawada</strong>, <strong>Tirupati</strong>, <strong>Rajahmundry</strong> and beyond.
+            With a perfect <strong>5.0 Google Rating</strong> and 58 verified reviews, we are the #1 car travels in Amalapuram, East Godavari district.
+          </p>
+            <div className="border border-gold/40 bg-black/40 p-6 rounded-lg flex items-center gap-6" itemScope itemType="https://schema.org/AggregateRating" itemProp="aggregateRating">
+              <div>
+                <div className="font-display text-6xl text-gold leading-none" itemProp="ratingValue">5.0</div>
+                <div className="flex gap-1 mt-2 text-gold" aria-label="5 out of 5 stars rating">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} size={18} fill="currentColor" aria-hidden="true" />
+                  ))}
+                </div>
+              </div>
+              <div className="border-l border-gold/30 pl-6">
+                <div className="font-display text-2xl text-foreground" itemProp="reviewCount">58 Reviews</div>
+                <div className="text-sm text-foreground/60 uppercase tracking-widest mt-1">
+                  Verified Google Reviews
+                </div>
+                <meta itemProp="bestRating" content="5" />
+                <meta itemProp="worstRating" content="1" />
               </div>
             </div>
-            <div className="border-l border-gold/30 pl-6">
-              <div className="font-display text-2xl text-foreground">58 Reviews</div>
-              <div className="text-sm text-foreground/60 uppercase tracking-widest mt-1">
-                Verified Google Reviews
-              </div>
-            </div>
-          </div>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 gap-5">

@@ -15,7 +15,9 @@ const items = [
 
 export function WhyUs() {
   return (
-    <Section id="why" label="Why Choose Us" title="The ACG Car Travels Difference">
+    <Section id="why" label="Why Choose Us" title="Why ACG Car Travels is #1 in Amalapuram"
+      subtitle="From our 5.0 Google rating to 24/7 availability — here's why thousands of passengers trust ACG Car Travels for car rental in Amalapuram and across Andhra Pradesh."
+    >
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {items.map((it, i) => (
           <motion.div
@@ -27,7 +29,7 @@ export function WhyUs() {
             className="group relative bg-[#0f0f0f] border border-gold/15 p-6 text-center hover:border-gold/50 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
           >
             <div className="mx-auto w-[72px] h-[72px] rounded-full border border-gold/40 bg-black/40 flex items-center justify-center mb-4 group-hover:bg-gold/10 transition-colors">
-              <it.icon className="text-gold" size={28} />
+              <it.icon className="text-gold" size={28} aria-hidden="true" />
             </div>
             <h3 className="font-display text-xl text-foreground mb-2">{it.title}</h3>
             <p className="text-sm text-foreground/60 leading-relaxed">{it.desc}</p>

@@ -1,45 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage — highest priority -->
   <url>
     <loc>https://acgcartravels.vercel.app/</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Fleet section — Car Rental Fleet in Amalapuram -->
   <url>
     <loc>https://acgcartravels.vercel.app/#fleet</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
-  <url>
-    <loc>https://acgcartravels.vercel.app/#packages</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://acgcartravels.vercel.app/#routes</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://acgcartravels.vercel.app/#about</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
+  <!-- Booking section — Reserve Your Ride -->
   <url>
     <loc>https://acgcartravels.vercel.app/#booking</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
+
+  <!-- Packages section — Cab & Car Travel Services -->
+  <url>
+    <loc>https://acgcartravels.vercel.app/#packages</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Routes section — Outstation Routes from Amalapuram -->
+  <url>
+    <loc>https://acgcartravels.vercel.app/#routes</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Testimonials section — Customer Reviews -->
+  <url>
+    <loc>https://acgcartravels.vercel.app/#testimonials</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- About section — About ACG Car Travels Amalapuram -->
+  <url>
+    <loc>https://acgcartravels.vercel.app/#about</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Why Us section -->
+  <url>
+    <loc>https://acgcartravels.vercel.app/#why</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Contact section — Contact ACG Car Travels -->
   <url>
     <loc>https://acgcartravels.vercel.app/#contact</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
+
 </urlset>

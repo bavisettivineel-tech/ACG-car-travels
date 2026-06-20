@@ -25,6 +25,7 @@ export function Hero() {
     <section
       id="hero"
       ref={wrapRef}
+      aria-label="ACG Car Travels — Best Car Rental & Cab Service in Amalapuram, Andhra Pradesh"
       className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#050505] grain"
     >
       {/* Gold dust particles */}
@@ -94,7 +95,7 @@ export function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
             </span>
             <span className="text-[10px] sm:text-xs uppercase tracking-widest text-gold">
-              ★ 5.0 Rated · Open 24 Hours · Amalapuram
+              ★ 5.0 Rated · Open 24 Hours · Amalapuram, AP
             </span>
           </motion.div>
 
@@ -104,9 +105,11 @@ export function Hero() {
             transition={{ delay: 0.7, duration: 0.9 }}
             className="font-display font-black mt-6 leading-[0.92]"
             style={{ fontSize: "clamp(44px, 9vw, 110px)" }}
+            aria-label="ACG Car Travels — Best Car Rental & Cab Service in Amalapuram, Andhra Pradesh"
           >
-            <span className="block gold-text-gradient drop-shadow-[0_4px_30px_rgba(201,168,76,0.3)]">ACG CAR</span>
-            <span className="block text-stroke-gold">TRAVELS</span>
+            <span className="block gold-text-gradient drop-shadow-[0_4px_30px_rgba(201,168,76,0.3)]" aria-hidden="true">ACG CAR</span>
+            <span className="block text-stroke-gold" aria-hidden="true">TRAVELS</span>
+            <span className="sr-only">ACG Car Travels — #1 Car Rental &amp; Cab Service in Amalapuram, Andhra Pradesh. Book Now: +91 7382352666</span>
           </motion.h1>
 
           <motion.p
@@ -115,8 +118,11 @@ export function Hero() {
             transition={{ delay: 1.1, duration: 0.8 }}
             className="font-accent italic text-lg md:text-2xl mt-4 text-gold/85"
           >
-            Premium Car Rentals · Amalapuram, Andhra Pradesh
+            Premium Car Travels · Amalapuram, Andhra Pradesh
           </motion.p>
+          <p className="sr-only">
+            ACG Car Travels — Amalapuram's most trusted car rental and cab service. Outstation trips, airport transfers, wedding cars, local drops and tour packages. Fleet: Sedan, Innova Crysta, Tempo Traveller, Force Urbania, Maruti Dzire, Maruti Baleno, Toyota Glanza, Maruti Ertiga. Available 24/7. Call +91 7382352666.
+          </p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -126,12 +132,16 @@ export function Hero() {
           >
             <a
               href="#booking"
+              aria-label="Book a cab with ACG Car Travels in Amalapuram"
+              title="Book Cab — ACG Car Travels Amalapuram"
               className="shimmer clip-parallelogram gold-gradient text-black font-bold uppercase tracking-widest px-8 py-4 text-sm gold-glow"
             >
               Book Your Ride
             </a>
             <a
               href="#fleet"
+              aria-label="Explore ACG Car Travels fleet — Sedan, Innova Crysta, Tempo Traveller and more"
+              title="View Our Fleet — ACG Car Travels"
               className="clip-parallelogram border-2 border-gold text-gold font-bold uppercase tracking-widest px-8 py-4 text-sm hover:bg-gold hover:text-black transition-colors bg-black/40 backdrop-blur-sm"
             >
               Explore Fleet

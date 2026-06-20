@@ -11,15 +11,19 @@ const cards = [
 
 export function Contact() {
   return (
-    <Section id="contact" label="Get In Touch" title="Reach Out To Us">
+    <Section id="contact" label="Get In Touch" title="Contact ACG Car Travels Amalapuram">
       <div className="grid lg:grid-cols-2 gap-8">
-        <div className="space-y-4">
+        <div className="space-y-4" itemScope itemType="https://schema.org/LocalBusiness">
+          <meta itemProp="name" content="ACG Car Travels" />
+          <meta itemProp="telephone" content="+917382352666" />
           {cards.map((c, i) => (
             <motion.a
               key={c.label}
               href={c.link || undefined}
               target={c.link?.startsWith("http") ? "_blank" : undefined}
               rel="noopener noreferrer"
+              aria-label={`${c.label}: ${c.value} — ACG Car Travels Amalapuram`}
+              title={`${c.label} — ACG Car Travels`}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -30,7 +34,7 @@ export function Contact() {
             >
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full border border-gold/40 bg-black/40 flex items-center justify-center flex-shrink-0">
-                  <c.icon className="text-gold" size={22} />
+                  <c.icon className="text-gold" size={22} aria-hidden="true" />
                 </div>
                 <div>
                   <div className="text-[10px] uppercase tracking-[0.3em] text-foreground/50">{c.label}</div>
@@ -41,6 +45,18 @@ export function Contact() {
               </div>
             </motion.a>
           ))}
+          <div
+            className="hidden"
+            itemScope
+            itemType="https://schema.org/PostalAddress"
+            itemProp="address"
+          >
+            <span itemProp="streetAddress">Door No: 5-2, 147, Sriramapuram</span>,
+            <span itemProp="addressLocality">Amalapuram</span>,
+            <span itemProp="addressRegion">Andhra Pradesh</span>
+            <span itemProp="postalCode">533201</span>,
+            <span itemProp="addressCountry">IN</span>
+          </div>
         </div>
 
         <motion.div
@@ -51,11 +67,12 @@ export function Contact() {
           className="border border-gold/20 overflow-hidden h-full min-h-[400px]"
         >
           <iframe
-            title="ACG Car Travels — Amalapuram"
+            title="ACG Car Travels — Location in Amalapuram, East Godavari, Andhra Pradesh"
             src="https://www.google.com/maps?q=Door+No:+5-2,+147,+Sriramapuram,+Amalapuram,+Andhra+Pradesh&output=embed"
             className="w-full h-full min-h-[400px]"
             style={{ filter: "grayscale(0.6) invert(0.92) hue-rotate(180deg)" }}
             loading="lazy"
+            aria-label="Map showing ACG Car Travels location in Amalapuram, Andhra Pradesh"
           />
         </motion.div>
       </div>

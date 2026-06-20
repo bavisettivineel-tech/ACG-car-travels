@@ -50,7 +50,9 @@ const packages = [
 
 export function Packages() {
   return (
-    <Section id="packages" label="Packages" title="Every Journey Covered">
+    <Section id="packages" label="Packages" title="Cab & Car Travel Services in Amalapuram"
+      subtitle="From local drops to outstation trips, airport transfers to wedding cars — ACG Car Travels covers every journey from Amalapuram."
+    >
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {packages.map((p, i) => {
           const link = `https://wa.me/917382352666?text=${encodeURIComponent(p.msg)}`;
@@ -87,6 +89,8 @@ export function Packages() {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Book ${p.name} with ACG Car Travels Amalapuram via WhatsApp`}
+                title={`Book ${p.name} — ACG Car Travels Amalapuram`}
                 className="shimmer block text-center clip-parallelogram gold-gradient text-black font-bold uppercase tracking-widest py-3 text-sm"
               >
                 Book on WhatsApp

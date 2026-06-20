@@ -29,7 +29,8 @@ const cars: CarItem[] = [
     features: ["AC", "Music System", "GPS"],
     price: "₹12/km",
     image: sedanImg,
-    whatsapp: "Hi, I want to book a Sedan from ACG Car Travels",
+    whatsapp: "Hi, I want to book a Sedan cab from ACG Car Travels Amalapuram",
+    alt: "Sedan cab — Toyota Etios / Dzire — ACG Car Travels Amalapuram",
   },
   {
     type: "Premium Class",
@@ -39,7 +40,8 @@ const cars: CarItem[] = [
     features: ["AC", "Push-back Seats", "Music", "GPS"],
     price: "₹16/km",
     image: innovaImg,
-    whatsapp: "Hi, I want to book an Innova Crysta from ACG Car Travels",
+    whatsapp: "Hi, I want to book an Innova Crysta from ACG Car Travels Amalapuram",
+    alt: "Toyota Innova Crysta 7-seater rental — ACG Car Travels Amalapuram",
   },
   {
     type: "Group Travel",
@@ -49,7 +51,8 @@ const cars: CarItem[] = [
     features: ["AC", "Push-back Seats", "Music", "Luggage Space"],
     price: "₹22/km",
     image: tempoImg,
-    whatsapp: "Hi, I want to book a Tempo Traveller from ACG Car Travels",
+    whatsapp: "Hi, I want to book a Tempo Traveller from ACG Car Travels Amalapuram",
+    alt: "Tempo Traveller 12-17 seater group cab — ACG Car Travels Amalapuram",
   },
   {
     type: "Family MPV",
@@ -59,7 +62,8 @@ const cars: CarItem[] = [
     features: ["AC", "Push-back Seats", "Music", "Boot Space"],
     price: "₹14/km",
     image: ertigaImg,
-    whatsapp: "Hi, I want to book a Maruti Ertiga from ACG Car Travels",
+    whatsapp: "Hi, I want to book a Maruti Ertiga from ACG Car Travels Amalapuram",
+    alt: "Maruti Ertiga 7-seater cab hire — ACG Car Travels Amalapuram",
   },
   {
     type: "Economy Class",
@@ -69,7 +73,8 @@ const cars: CarItem[] = [
     features: ["AC", "Music System", "GPS", "Comfort Seats"],
     price: "₹12/km",
     image: dezireImg,
-    whatsapp: "Hi, I want to book a Maruti Dzire from ACG Car Travels",
+    whatsapp: "Hi, I want to book a Maruti Dzire from ACG Car Travels Amalapuram",
+    alt: "Maruti Dzire taxi Amalapuram — ACG Car Travels",
   },
   {
     type: "Premium Hatchback",
@@ -79,7 +84,8 @@ const cars: CarItem[] = [
     features: ["AC", "Music System", "GPS", "Comfortable Cabin"],
     price: "₹12/km",
     image: balenoImg,
-    whatsapp: "Hi, I want to book a Maruti Baleno from ACG Car Travels",
+    whatsapp: "Hi, I want to book a Maruti Baleno from ACG Car Travels Amalapuram",
+    alt: "Maruti Baleno cab rental Amalapuram — ACG Car Travels",
   },
   {
     type: "Premium Hatchback",
@@ -89,7 +95,8 @@ const cars: CarItem[] = [
     features: ["AC", "Music System", "GPS", "Smooth Ride"],
     price: "₹12/km",
     image: glanzaImg,
-    whatsapp: "Hi, I want to book a Toyota Glanza from ACG Car Travels",
+    whatsapp: "Hi, I want to book a Toyota Glanza from ACG Car Travels Amalapuram",
+    alt: "Toyota Glanza taxi Amalapuram — ACG Car Travels",
   },
   {
     type: "Luxury Group Travel",
@@ -99,7 +106,8 @@ const cars: CarItem[] = [
     features: ["AC", "Push-back Seats", "Premium Audio", "LED TV Screen"],
     price: "₹26/km",
     image: urbaniaImg,
-    whatsapp: "Hi, I want to book a Force Urbania from ACG Car Travels",
+    whatsapp: "Hi, I want to book a Force Urbania from ACG Car Travels Amalapuram",
+    alt: "Force Urbania luxury van hire Amalapuram — ACG Car Travels",
   },
 ];
 
@@ -130,7 +138,7 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
              style={{ background: "radial-gradient(ellipse at top, rgba(255,240,200,0.18), transparent 60%)" }} />
         <img
           src={car.image}
-          alt={`${car.name} — ${car.models}`}
+          alt={car.alt || `${car.name} — ${car.models} cab rental — ACG Car Travels Amalapuram`}
           loading="lazy"
           width={1024}
           height={1024}
@@ -160,6 +168,8 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`Book ${car.name} — ${car.models} — ACG Car Travels Amalapuram`}
+          title={`Book ${car.name} on WhatsApp — ACG Car Travels`}
           className="shimmer mt-5 block text-center clip-parallelogram gold-gradient text-black font-bold uppercase tracking-widest py-3 text-sm"
         >
           Book Now
@@ -174,9 +184,9 @@ export function Fleet() {
     <Section
       id="fleet"
       label="Our Fleet"
-      title="Choose Your Perfect Ride"
+      title="Car Rental Fleet in Amalapuram"
       bgClass="bg-[#050505]"
-      subtitle="Step into our virtual showroom — every vehicle, immaculately maintained."
+      subtitle="Choose from our 8 well-maintained AC vehicles — Sedan, Innova Crysta, Tempo Traveller, Force Urbania & more. Available 24/7 in Amalapuram."
     >
       <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
         {cars.map((car, i) => (

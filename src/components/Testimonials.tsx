@@ -31,7 +31,8 @@ export function Testimonials() {
     <Section
       id="testimonials"
       label="Reviews"
-      title="What Our Passengers Say"
+      title="ACG Car Travels — Customer Reviews"
+      subtitle="What our passengers say about our car travels service in Amalapuram. Rated 5.0 ★ on Google with 58 verified reviews."
       bgClass="bg-[#050505]"
     >
       <div className="grid md:grid-cols-3 gap-6">
@@ -43,23 +44,34 @@ export function Testimonials() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.12 }}
             className="relative bg-[#0f0f0f] border border-gold/20 p-7 overflow-hidden"
+            itemScope
+            itemType="https://schema.org/Review"
           >
-            <Quote className="absolute -top-2 -left-2 text-gold/10" size={120} strokeWidth={1} />
+            <meta itemProp="itemReviewed" content="ACG Car Travels Amalapuram" />
+            <Quote className="absolute -top-2 -left-2 text-gold/10" size={120} strokeWidth={1} aria-hidden="true" />
             <div className="relative">
-              <div className="flex gap-1 text-gold mb-4">
+              <div
+                className="flex gap-1 text-gold mb-4"
+                aria-label="5 out of 5 stars"
+                itemProp="reviewRating"
+                itemScope
+                itemType="https://schema.org/Rating"
+              >
+                <meta itemProp="ratingValue" content="5" />
+                <meta itemProp="bestRating" content="5" />
                 {Array.from({ length: 5 }).map((_, k) => (
-                  <Star key={k} size={16} fill="currentColor" />
+                  <Star key={k} size={16} fill="currentColor" aria-hidden="true" />
                 ))}
               </div>
-              <p className="font-accent italic text-lg text-foreground/85 leading-relaxed mb-6">
+              <p className="font-accent italic text-lg text-foreground/85 leading-relaxed mb-6" itemProp="reviewBody">
                 "{t.text}"
               </p>
               <div className="flex items-center gap-3 pt-4 border-t border-gold/15">
-                <div className="w-11 h-11 rounded-full gold-gradient flex items-center justify-center font-display text-xl text-black">
+                <div className="w-11 h-11 rounded-full gold-gradient flex items-center justify-center font-display text-xl text-black" aria-hidden="true">
                   {t.initial}
                 </div>
-                <div>
-                  <div className="font-display text-foreground">{t.name}</div>
+                <div itemProp="author" itemScope itemType="https://schema.org/Person">
+                  <div className="font-display text-foreground" itemProp="name">{t.name}</div>
                   <div className="text-xs text-foreground/50 uppercase tracking-widest">
                     {t.location} · {t.source}
                   </div>

@@ -15,7 +15,7 @@ const initial = {
 };
 
 const trips = ["Local City Drop", "Outstation Trip", "Airport Transfer", "Tour Package", "Wedding / Event", "Corporate Travel", "Hourly Rental"];
-const vehicles = ["Sedan (4 Seater)", "SUV Innova (7 Seater)", "Tempo Traveller (12-17 Seats)", "Luxury Car"];
+const vehicles = ["Sedan — Toyota Etios / Dzire (4 Seater)", "Innova Crysta (7 Seater)", "Maruti Ertiga (6+1 Seater)", "Maruti Dzire (4 Seater)", "Maruti Baleno (5 Seater)", "Toyota Glanza (5 Seater)", "Tempo Traveller (12-17 Seats)", "Force Urbania (13-17 Seats)"];
 
 export function Booking() {
   const [form, setForm] = useState(initial);
@@ -61,8 +61,8 @@ export function Booking() {
           className="text-center mb-12"
         >
           <div className="font-accent italic text-gold/80 text-lg mb-3">— Reserve Now —</div>
-          <h2 className="font-display text-4xl md:text-6xl gold-text-gradient">Reserve Your Ride Now</h2>
-          <p className="mt-4 text-foreground/60">Fill the form and we confirm within minutes.</p>
+          <h2 className="font-display text-4xl md:text-6xl gold-text-gradient">Book Cab in Amalapuram</h2>
+          <p className="mt-4 text-foreground/60">Book your car rental or cab in Amalapuram instantly via WhatsApp. ACG Car Travels confirms your booking within minutes. Available 24/7.</p>
         </motion.div>
 
         <motion.form
@@ -71,6 +71,7 @@ export function Booking() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
+          aria-label="Book a cab or car rental in Amalapuram — ACG Car Travels"
           className="bg-black/40 backdrop-blur-sm border border-gold/20 p-8 md:p-10 rounded-lg"
         >
           <div className="grid md:grid-cols-2 gap-6">
@@ -118,9 +119,10 @@ export function Booking() {
 
           <button
             type="submit"
+            aria-label="Send booking request to ACG Car Travels via WhatsApp"
             className="shimmer mt-8 w-full clip-parallelogram gold-gradient text-black font-bold uppercase tracking-widest py-4 flex items-center justify-center gap-2 gold-glow"
           >
-            <Send size={18} /> Send Booking via WhatsApp
+            <Send size={18} aria-hidden="true" /> Send Booking via WhatsApp
           </button>
         </motion.form>
       </div>
