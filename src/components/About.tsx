@@ -26,7 +26,7 @@ export function About() {
             passengers across Andhra Pradesh and Telangana. From local city drops and outstation trips
             to airport transfers, wedding cars, and tour packages — we deliver every journey with
             professionalism, comfort, and care. Whether you need a Sedan, Innova Crysta, Tempo Traveller,
-            Maruti Ertiga, or Honda Amaze, our well-maintained AC fleet is available 24/7. Covering
+            Maruti Ertiga, Maruti Dzire, Maruti Baleno, Toyota Glanza, or Force Urbania, our well-maintained AC fleet is available 24/7. Covering
             Amalapuram to Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Rajahmundry and beyond.
           </p>
           <div className="border border-gold/40 bg-black/40 p-6 rounded-lg flex items-center gap-6">

@@ -4,7 +4,10 @@ import sedanImg from "@/assets/car-sedan.jpg";
 import innovaImg from "@/assets/car-innova.jpg";
 import tempoImg from "@/assets/car-tempo.jpg";
 import ertigaImg from "@/assets/car-ertiga.jpg";
-import amazeImg from "@/assets/car-amaze.jpg";
+import dezireImg from "@/assets/car-dezire.jpeg";
+import balenoImg from "@/assets/car-baleno.jpeg";
+import urbaniaImg from "@/assets/car-urbania.jpeg";
+import glanzaImg from "@/assets/car-glaza.jpeg";
 
 interface CarItem {
   type: string;
@@ -59,14 +62,44 @@ const cars: CarItem[] = [
     whatsapp: "Hi, I want to book a Maruti Ertiga from ACG Car Travels",
   },
   {
-    type: "Compact Sedan",
-    name: "Honda Amaze",
-    models: "Honda Amaze",
+    type: "Economy Class",
+    name: "Maruti Dzire",
+    models: "Maruti Suzuki Dzire",
     seats: "4 Seater",
     features: ["AC", "Music System", "GPS", "Comfort Seats"],
-    price: "₹13/km",
-    image: amazeImg,
-    whatsapp: "Hi, I want to book a Honda Amaze from ACG Car Travels",
+    price: "₹12/km",
+    image: dezireImg,
+    whatsapp: "Hi, I want to book a Maruti Dzire from ACG Car Travels",
+  },
+  {
+    type: "Premium Hatchback",
+    name: "Maruti Baleno",
+    models: "Maruti Suzuki Baleno",
+    seats: "5 Seater",
+    features: ["AC", "Music System", "GPS", "Comfortable Cabin"],
+    price: "₹12/km",
+    image: balenoImg,
+    whatsapp: "Hi, I want to book a Maruti Baleno from ACG Car Travels",
+  },
+  {
+    type: "Premium Hatchback",
+    name: "Toyota Glanza",
+    models: "Toyota Glanza",
+    seats: "5 Seater",
+    features: ["AC", "Music System", "GPS", "Smooth Ride"],
+    price: "₹12/km",
+    image: glanzaImg,
+    whatsapp: "Hi, I want to book a Toyota Glanza from ACG Car Travels",
+  },
+  {
+    type: "Luxury Group Travel",
+    name: "Force Urbania",
+    models: "Force Urbania Luxury Van",
+    seats: "13–17 Seater",
+    features: ["AC", "Push-back Seats", "Premium Audio", "LED TV Screen"],
+    price: "₹26/km",
+    image: urbaniaImg,
+    whatsapp: "Hi, I want to book a Force Urbania from ACG Car Travels",
   },
 ];
 
