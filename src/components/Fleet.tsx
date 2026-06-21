@@ -18,6 +18,7 @@ interface CarItem {
   price: string;
   image: string;
   whatsapp: string;
+  alt: string;
 }
 
 const cars: CarItem[] = [
