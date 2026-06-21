@@ -1,33 +1,58 @@
 User-agent: *
 Allow: /
-Crawl-delay: 5
+Crawl-delay: 2
 
-# Allow all major search engine bots
+# Google — full access, low delay for fast indexing
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 2
+Crawl-delay: 1
 
 User-agent: Googlebot-Image
 Allow: /
 
+User-agent: Googlebot-Video
+Allow: /
+
+# Bing / Yahoo
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 5
+Crawl-delay: 3
 
 User-agent: Slurp
 Allow: /
 
+# DuckDuckGo
 User-agent: DuckDuckBot
 Allow: /
 
+# Baidu
 User-agent: Baiduspider
 Allow: /
 
+# Yandex
 User-agent: YandexBot
 Allow: /
 
-# Disallow admin or private paths (if any)
-Disallow: /api/
+# Facebook crawler (Open Graph)
+User-agent: facebookexternalhit
+Allow: /
 
-# Sitemap location
-Sitemap: https://acgcartravels.vercel.app/sitemap.xml
+# Twitter / X crawler
+User-agent: Twitterbot
+Allow: /
+
+# WhatsApp link preview
+User-agent: WhatsApp
+Allow: /
+
+# LinkedIn crawler
+User-agent: LinkedInBot
+Allow: /
+
+# Disallow internal API paths
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Canonical sitemap location
+Sitemap: https://www.acgcartravels.com/sitemap.xml

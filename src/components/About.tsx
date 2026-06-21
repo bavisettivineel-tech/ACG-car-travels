@@ -13,7 +13,7 @@ const cards = [
 
 export function About() {
   return (
-    <Section id="about" label="About Us" title="Amalapuram's Most Trusted Car Travels">
+    <Section id="about" label="About Us" title="Amalapuram's #1 Car Travels — Trusted Since Day One">
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         <motion.div
           initial={{ opacity: 0, x: -30 }}

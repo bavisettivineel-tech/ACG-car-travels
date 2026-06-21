@@ -16,7 +16,7 @@ const items = [
 export function WhyUs() {
   return (
     <Section id="why" label="Why Choose Us" title="Why ACG Car Travels is #1 in Amalapuram"
-      subtitle="From our 5.0 Google rating to 24/7 availability — here's why thousands of passengers trust ACG Car Travels for car rental in Amalapuram and across Andhra Pradesh."
+      subtitle="Amalapuram's nearest car travels service — 5.0 Google rating, 24/7 availability, 8 AC vehicle types, expert drivers, GPS tracking and no hidden charges. Trusted by 500+ passengers across Andhra Pradesh."
     >
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {items.map((it, i) => (

@@ -116,13 +116,17 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
   const link = `https://wa.me/917382352666?text=${encodeURIComponent(car.whatsapp)}`;
 
   return (
-    <motion.div
+    <motion.article
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.7, delay: index * 0.1 }}
       className="group relative bg-[#0f0f0f] border border-gold/15 hover:border-gold/60 transition-all duration-500 hover:-translate-y-2 hover:gold-glow-strong"
+      itemScope
+      itemType="https://schema.org/Product"
     >
+      <meta itemProp="name" content={`${car.name} — ${car.models} — ACG Car Travels Amalapuram`} />
+      <meta itemProp="description" content={`${car.name} (${car.seats}) available for hire in Amalapuram at ${car.price} with AC, GPS and professional driver. Book with ACG Car Travels.`} />
       <div className="absolute top-3 left-3 z-10 px-2.5 py-1 bg-black/70 backdrop-blur text-[10px] uppercase tracking-widest text-gold border border-gold/40">
         {car.type}
       </div>
@@ -144,15 +148,16 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
           width={1024}
           height={1024}
           className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+          itemProp="image"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-transparent" />
       </div>
 
       <div className="p-6">
-        <h3 className="font-display text-2xl text-foreground">{car.name}</h3>
-        <p className="text-sm text-foreground/50 mt-1">{car.models}</p>
+        <h3 className="font-display text-2xl text-foreground" itemProp="name">{car.name}</h3>
+        <p className="text-sm text-foreground/50 mt-1" itemProp="model">{car.models}</p>
         <div className="flex items-center gap-3 mt-3 text-xs uppercase tracking-widest text-gold/80">
-          <span>{car.seats}</span>
+          <span itemProp="vehicleSeatingCapacity">{car.seats}</span>
         </div>
         <div className="flex flex-wrap gap-2 mt-4">
           {car.features.map((f) => (
@@ -164,7 +169,14 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
             </span>
           ))}
         </div>
-
+        <div className="mt-4 flex items-center justify-between" itemScope itemType="https://schema.org/Offer">
+          <div>
+            <span className="text-gold font-display text-xl" itemProp="price">{car.price}</span>
+            <meta itemProp="priceCurrency" content="INR" />
+            <meta itemProp="availability" content="https://schema.org/InStock" />
+            <meta itemProp="seller" content="ACG Car Travels" />
+          </div>
+        </div>
         <a
           href={link}
           target="_blank"
@@ -172,11 +184,12 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
           aria-label={`Book ${car.name} — ${car.models} — ACG Car Travels Amalapuram`}
           title={`Book ${car.name} on WhatsApp — ACG Car Travels`}
           className="shimmer mt-5 block text-center clip-parallelogram gold-gradient text-black font-bold uppercase tracking-widest py-3 text-sm"
+          itemProp="url"
         >
-          Book Now
+          Book Now via WhatsApp
         </a>
       </div>
-    </motion.div>
+    </motion.article>
   );
 }
 
@@ -185,13 +198,18 @@ export function Fleet() {
     <Section
       id="fleet"
       label="Our Fleet"
-      title="Car Rental Fleet in Amalapuram"
+      title="Car Travels Fleet in Amalapuram — 8 Vehicles"
       bgClass="bg-[#050505]"
-      subtitle="Choose from our 8 well-maintained AC vehicles — Sedan, Innova Crysta, Tempo Traveller, Force Urbania & more. Available 24/7 in Amalapuram."
+      subtitle="Choose from 8 well-maintained AC vehicles — Sedan, Innova Crysta, Tempo Traveller, Force Urbania & more. ACG Car Travels is Amalapuram's nearest car travels, available 24/7."
     >
-      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6" itemScope itemType="https://schema.org/ItemList">
+        <meta itemProp="name" content="ACG Car Travels Fleet — Car Rental Vehicles in Amalapuram" />
         {cars.map((car, i) => (
-          <CarCard key={car.name} car={car} index={i} />
+          <div key={car.name} itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <meta itemProp="position" content={String(i + 1)} />
+            <meta itemProp="name" content={`${car.name} — ${car.seats} — ACG Car Travels Amalapuram`} />
+            <CarCard car={car} index={i} />
+          </div>
         ))}
       </div>
     </Section>

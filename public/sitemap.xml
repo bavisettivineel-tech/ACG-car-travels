@@ -1,77 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Homepage — highest priority -->
+  <!-- ═══ Homepage — ACG Car Travels Amalapuram | Highest Priority ═══ -->
   <url>
     <loc>https://www.acgcartravels.com/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.acgcartravels.com/og-image.jpg</image:loc>
+      <image:title>ACG Car Travels Amalapuram — #1 Car Travels &amp; Cab Service</image:title>
+      <image:caption>Best car travels in Amalapuram, Andhra Pradesh — ACG Car Travels. Call +91 7382352666</image:caption>
+    </image:image>
   </url>
 
-  <!-- Fleet section — Car Rental Fleet in Amalapuram -->
+  <!-- ═══ Fleet — Car Rental Fleet in Amalapuram ═══ -->
   <url>
     <loc>https://www.acgcartravels.com/#fleet</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
-  <!-- Booking section — Reserve Your Ride -->
+  <!-- ═══ Booking — Book Cab in Amalapuram ═══ -->
   <url>
     <loc>https://www.acgcartravels.com/#booking</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
-  <!-- Packages section — Cab & Car Travel Services -->
+  <!-- ═══ Packages — Car Travel Services Amalapuram ═══ -->
   <url>
     <loc>https://www.acgcartravels.com/#packages</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
-  <!-- Routes section — Outstation Routes from Amalapuram -->
+  <!-- ═══ Routes — Outstation Routes from Amalapuram ═══ -->
   <url>
     <loc>https://www.acgcartravels.com/#routes</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.88</priority>
   </url>
 
-  <!-- Testimonials section — Customer Reviews -->
+  <!-- ═══ Testimonials — ACG Car Travels Reviews ═══ -->
   <url>
     <loc>https://www.acgcartravels.com/#testimonials</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- About section — About ACG Car Travels Amalapuram -->
+  <!-- ═══ About — About ACG Car Travels Amalapuram ═══ -->
   <url>
     <loc>https://www.acgcartravels.com/#about</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.78</priority>
   </url>
 
-  <!-- Why Us section -->
+  <!-- ═══ Why Us — Why ACG Car Travels is #1 in Amalapuram ═══ -->
   <url>
     <loc>https://www.acgcartravels.com/#why</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.72</priority>
   </url>
 
-  <!-- Contact section — Contact ACG Car Travels -->
+  <!-- ═══ Contact — Contact ACG Car Travels Amalapuram ═══ -->
   <url>
     <loc>https://www.acgcartravels.com/#contact</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <!-- ═══ FAQ — Frequently Asked Questions ═══ -->
+  <url>
+    <loc>https://www.acgcartravels.com/#faq</loc>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>

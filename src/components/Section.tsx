@@ -12,8 +12,9 @@ interface SectionProps {
 }
 
 export function Section({ id, label, title, subtitle, className = "", bgClass = "bg-[#0a0a0a]", children }: SectionProps) {
+  const headingId = `${id}-heading`;
   return (
-    <section id={id} className={`relative py-24 md:py-32 grain ${bgClass} ${className}`}>
+    <section id={id} aria-labelledby={headingId} className={`relative py-24 md:py-32 grain ${bgClass} ${className}`}>
       <div className="max-w-7xl mx-auto px-5 relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -23,9 +24,9 @@ export function Section({ id, label, title, subtitle, className = "", bgClass = 
           className="text-center mb-14"
         >
           {label && (
-            <div className="font-accent italic text-gold/80 text-lg mb-3">— {label} —</div>
+            <div className="font-accent italic text-gold/80 text-lg mb-3" aria-hidden="true">— {label} —</div>
           )}
-          <h2 className="font-display text-4xl md:text-6xl gold-text-gradient leading-tight">
+          <h2 id={headingId} className="font-display text-4xl md:text-6xl gold-text-gradient leading-tight">
             {title}
           </h2>
           {subtitle && (
@@ -38,3 +39,4 @@ export function Section({ id, label, title, subtitle, className = "", bgClass = 
     </section>
   );
 }
+

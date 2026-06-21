@@ -46,6 +46,7 @@ export function Booking() {
   return (
     <section
       id="booking"
+      aria-label="Book a cab or car travels in Amalapuram — ACG Car Travels"
       className="relative py-24 md:py-32 grain overflow-hidden"
       style={{ background: "linear-gradient(180deg, #0d0a00 0%, #050505 60%)" }}
     >
@@ -62,7 +63,7 @@ export function Booking() {
         >
           <div className="font-accent italic text-gold/80 text-lg mb-3">— Reserve Now —</div>
           <h2 className="font-display text-4xl md:text-6xl gold-text-gradient">Book Cab in Amalapuram</h2>
-          <p className="mt-4 text-foreground/60">Book your car rental or cab in Amalapuram instantly via WhatsApp. ACG Car Travels confirms your booking within minutes. Available 24/7.</p>
+          <p id="booking-desc" className="mt-4 text-foreground/60">Book your car travels or cab in Amalapuram instantly via WhatsApp. ACG Car Travels — Amalapuram's nearest car travels service — confirms your booking within minutes. Available 24/7.</p>
         </motion.div>
 
         <motion.form
@@ -71,49 +72,50 @@ export function Booking() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          aria-label="Book a cab or car rental in Amalapuram — ACG Car Travels"
+          aria-label="Book a cab or car travels in Amalapuram — ACG Car Travels"
+          aria-describedby="booking-desc"
           className="bg-black/40 backdrop-blur-sm border border-gold/20 p-8 md:p-10 rounded-lg"
         >
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className={labelCls}>Your Name</label>
-              <input required value={form.name} onChange={(e) => update("name", e.target.value)} placeholder="Full Name" className={inputCls} />
+              <label htmlFor="booking-name" className={labelCls}>Your Name</label>
+              <input id="booking-name" required value={form.name} onChange={(e) => update("name", e.target.value)} placeholder="Full Name" autoComplete="name" className={inputCls} />
             </div>
             <div>
-              <label className={labelCls}>Phone Number</label>
-              <input required value={form.phone} onChange={(e) => update("phone", e.target.value)} type="tel" placeholder="+91 XXXXX XXXXX" className={inputCls} />
+              <label htmlFor="booking-phone" className={labelCls}>Phone Number</label>
+              <input id="booking-phone" required value={form.phone} onChange={(e) => update("phone", e.target.value)} type="tel" placeholder="+91 XXXXX XXXXX" autoComplete="tel" className={inputCls} />
             </div>
             <div>
-              <label className={labelCls}>Trip Type</label>
-              <select value={form.tripType} onChange={(e) => update("tripType", e.target.value)} className={inputCls + " bg-[#0a0a0a]"}>
+              <label htmlFor="booking-trip" className={labelCls}>Trip Type</label>
+              <select id="booking-trip" value={form.tripType} onChange={(e) => update("tripType", e.target.value)} className={inputCls + " bg-[#0a0a0a]"}>
                 {trips.map((t) => (<option key={t}>{t}</option>))}
               </select>
             </div>
             <div>
-              <label className={labelCls}>Vehicle Type</label>
-              <select value={form.vehicle} onChange={(e) => update("vehicle", e.target.value)} className={inputCls + " bg-[#0a0a0a]"}>
+              <label htmlFor="booking-vehicle" className={labelCls}>Vehicle Type</label>
+              <select id="booking-vehicle" value={form.vehicle} onChange={(e) => update("vehicle", e.target.value)} className={inputCls + " bg-[#0a0a0a]"}>
                 {vehicles.map((t) => (<option key={t}>{t}</option>))}
               </select>
             </div>
             <div>
-              <label className={labelCls}>Pickup Location</label>
-              <input value={form.pickup} onChange={(e) => update("pickup", e.target.value)} placeholder="From where?" className={inputCls} />
+              <label htmlFor="booking-pickup" className={labelCls}>Pickup Location</label>
+              <input id="booking-pickup" value={form.pickup} onChange={(e) => update("pickup", e.target.value)} placeholder="From where? (e.g. Amalapuram Bus Stand)" className={inputCls} />
             </div>
             <div>
-              <label className={labelCls}>Drop Location</label>
-              <input value={form.drop} onChange={(e) => update("drop", e.target.value)} placeholder="Where to?" className={inputCls} />
+              <label htmlFor="booking-drop" className={labelCls}>Drop Location</label>
+              <input id="booking-drop" value={form.drop} onChange={(e) => update("drop", e.target.value)} placeholder="Where to? (e.g. Hyderabad, Vizag Airport)" className={inputCls} />
             </div>
             <div>
-              <label className={labelCls}>Travel Date</label>
-              <input type="date" value={form.date} onChange={(e) => update("date", e.target.value)} className={inputCls + " text-foreground/80"} />
+              <label htmlFor="booking-date" className={labelCls}>Travel Date</label>
+              <input id="booking-date" type="date" value={form.date} onChange={(e) => update("date", e.target.value)} className={inputCls + " text-foreground/80"} />
             </div>
             <div>
-              <label className={labelCls}>Pickup Time</label>
-              <input type="time" value={form.time} onChange={(e) => update("time", e.target.value)} className={inputCls + " text-foreground/80"} />
+              <label htmlFor="booking-time" className={labelCls}>Pickup Time</label>
+              <input id="booking-time" type="time" value={form.time} onChange={(e) => update("time", e.target.value)} className={inputCls + " text-foreground/80"} />
             </div>
             <div className="md:col-span-2">
-              <label className={labelCls}>Additional Notes</label>
-              <textarea value={form.notes} onChange={(e) => update("notes", e.target.value)} rows={3} placeholder="Number of passengers, return trip, special requests" className={inputCls + " resize-none"} />
+              <label htmlFor="booking-notes" className={labelCls}>Additional Notes</label>
+              <textarea id="booking-notes" value={form.notes} onChange={(e) => update("notes", e.target.value)} rows={3} placeholder="Number of passengers, return trip, special requests, preferred route" className={inputCls + " resize-none"} />
             </div>
           </div>
 
