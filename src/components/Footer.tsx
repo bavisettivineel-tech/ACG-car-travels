@@ -16,7 +16,7 @@ export function Footer() {
         Corporate cab service Amalapuram. 24 hour taxi Amalapuram. Local cab Amalapuram. Tour packages from Amalapuram.
         Araku Valley tour from Amalapuram. Tirupati tour cab Amalapuram. East Godavari car travels.
         Best travels in Amalapuram. Best car travels Amalapuram. ACG car travels Amalapuram contact number.
-        Call +91 73823 52666. WhatsApp +91 73823 52666. Website: acgcartravels.vercel.app.
+        Call +91 73823 52666. WhatsApp +91 73823 52666. Website: www.acgcartravels.com.
         Address: Door No 5-2, 147, Sriramapuram, Amalapuram, Andhra Pradesh 533201.
       </div>
       <div className="max-w-7xl mx-auto px-5">

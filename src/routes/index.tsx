@@ -26,7 +26,7 @@ function Index() {
     >
       <meta itemProp="name" content="ACG Car Travels Amalapuram | #1 Cab & Car Rental Service" />
       <meta itemProp="description" content="ACG Car Travels — Amalapuram's #1 rated car rental & cab service. Outstation, Airport, Wedding & Tours. Sedan, Innova Crysta, Tempo Traveller, Force Urbania. 24/7. +91 7382352666." />
-      <meta itemProp="url" content="https://acgcartravels.vercel.app/" />
+      <meta itemProp="url" content="https://www.acgcartravels.com/" />
       <LoadingScreen />
       <Navbar />
       <main
