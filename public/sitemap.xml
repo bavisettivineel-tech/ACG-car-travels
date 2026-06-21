@@ -6,7 +6,7 @@
 
   <!-- Homepage — highest priority -->
   <url>
-    <loc>https://acgcartravels.vercel.app/</loc>
+    <loc>https://www.acgcartravels.com/</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- Fleet section — Car Rental Fleet in Amalapuram -->
   <url>
-    <loc>https://acgcartravels.vercel.app/#fleet</loc>
+    <loc>https://www.acgcartravels.com/#fleet</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -22,7 +22,7 @@
 
   <!-- Booking section — Reserve Your Ride -->
   <url>
-    <loc>https://acgcartravels.vercel.app/#booking</loc>
+    <loc>https://www.acgcartravels.com/#booking</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -30,7 +30,7 @@
 
   <!-- Packages section — Cab & Car Travel Services -->
   <url>
-    <loc>https://acgcartravels.vercel.app/#packages</loc>
+    <loc>https://www.acgcartravels.com/#packages</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -38,7 +38,7 @@
 
   <!-- Routes section — Outstation Routes from Amalapuram -->
   <url>
-    <loc>https://acgcartravels.vercel.app/#routes</loc>
+    <loc>https://www.acgcartravels.com/#routes</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -46,7 +46,7 @@
 
   <!-- Testimonials section — Customer Reviews -->
   <url>
-    <loc>https://acgcartravels.vercel.app/#testimonials</loc>
+    <loc>https://www.acgcartravels.com/#testimonials</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -54,7 +54,7 @@
 
   <!-- About section — About ACG Car Travels Amalapuram -->
   <url>
-    <loc>https://acgcartravels.vercel.app/#about</loc>
+    <loc>https://www.acgcartravels.com/#about</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -62,7 +62,7 @@
 
   <!-- Why Us section -->
   <url>
-    <loc>https://acgcartravels.vercel.app/#why</loc>
+    <loc>https://www.acgcartravels.com/#why</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
@@ -70,7 +70,7 @@
 
   <!-- Contact section — Contact ACG Car Travels -->
   <url>
-    <loc>https://acgcartravels.vercel.app/#contact</loc>
+    <loc>https://www.acgcartravels.com/#contact</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
