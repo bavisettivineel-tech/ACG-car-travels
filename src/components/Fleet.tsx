@@ -3,7 +3,7 @@ import { Section } from "./Section";
 import sedanImg from "@/assets/car-sedan.jpg";
 import innovaImg from "@/assets/car-innova.jpg";
 import tempoImg from "@/assets/car-tempo.jpg";
-import ertigaImg from "@/assets/car-ertiga.jpg";
+import ertigaImg from "@/assets/car-ertiga.jpeg";
 import dezireImg from "@/assets/car-dezire.jpeg";
 import balenoImg from "@/assets/car-baleno.jpeg";
 import urbaniaImg from "@/assets/car-urbania.jpeg";
