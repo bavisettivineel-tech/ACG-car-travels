@@ -116,7 +116,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1, duration: 0.8 }}
-            className="font-accent italic text-lg md:text-2xl mt-4 text-gold drop-shadow-[0_2px_12px_rgba(201,168,76,0.7)]"
+            className="font-accent italic font-bold text-xl md:text-2xl mt-4 text-gold drop-shadow-[0_2px_12px_rgba(201,168,76,0.7)]"
           >
             Premium Car Travels · Amalapuram, Andhra Pradesh
           </motion.p>
