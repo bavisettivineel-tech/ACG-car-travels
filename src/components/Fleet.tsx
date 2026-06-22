@@ -126,7 +126,7 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
       itemType="https://schema.org/Product"
     >
       <meta itemProp="name" content={`${car.name} — ${car.models} — ACG Car Travels Amalapuram`} />
-      <meta itemProp="description" content={`${car.name} (${car.seats}) available for hire in Amalapuram at ${car.price} with AC, GPS and professional driver. Book with ACG Car Travels.`} />
+      <meta itemProp="description" content={`${car.name} (${car.seats}) available for hire in Amalapuram with AC, GPS and professional driver. Book with ACG Car Travels.`} />
       <div className="absolute top-3 left-3 z-10 px-2.5 py-1 bg-black/70 backdrop-blur text-[10px] uppercase tracking-widest text-gold border border-gold/40">
         {car.type}
       </div>
@@ -168,14 +168,6 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
               {f}
             </span>
           ))}
-        </div>
-        <div className="mt-4 flex items-center justify-between" itemScope itemType="https://schema.org/Offer">
-          <div>
-            <span className="text-gold font-display text-xl" itemProp="price">{car.price}</span>
-            <meta itemProp="priceCurrency" content="INR" />
-            <meta itemProp="availability" content="https://schema.org/InStock" />
-            <meta itemProp="seller" content="ACG Car Travels" />
-          </div>
         </div>
         <a
           href={link}
