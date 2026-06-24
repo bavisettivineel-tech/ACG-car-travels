@@ -4,8 +4,8 @@ import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 
 const cards = [
   { icon: Phone, label: "Phone / Call", value: "+91 73823 52666", link: "tel:+917382352666" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+91 73823 52666", link: "https://wa.me/917382352666" },
-  { icon: MapPin, label: "Address", value: "Door No: 5-2, 147, Sriramapuram, Amalapuram, Andhra Pradesh" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91 73823 52666", link: "https://wa.me/917382352666?text=Hi, I want to book a cab with ACG Car Travels Amalapuram" },
+  { icon: MapPin, label: "Address", value: "Door No: 5-2, 147, Sriramapuram, Amalapuram, Andhra Pradesh 533201", link: "https://maps.google.com/?q=16.5787,82.0061" },
   { icon: Clock, label: "Working Hours", value: "Open 24 Hours · 7 Days a Week", highlight: true },
 ];
 
@@ -16,12 +16,13 @@ export function Contact() {
         <div className="space-y-4" itemScope itemType="https://schema.org/LocalBusiness">
           <meta itemProp="name" content="ACG Car Travels" />
           <meta itemProp="telephone" content="+917382352666" />
+          <meta itemProp="url" content="https://www.acgcartravels.com/" />
           {cards.map((c, i) => (
             <motion.a
               key={c.label}
               href={c.link || undefined}
               target={c.link?.startsWith("http") ? "_blank" : undefined}
-              rel="noopener noreferrer"
+              rel={c.link?.startsWith("http") ? "noopener noreferrer" : undefined}
               aria-label={`${c.label}: ${c.value} — ACG Car Travels Amalapuram`}
               title={`${c.label} — ACG Car Travels`}
               initial={{ opacity: 0, x: -20 }}
@@ -45,6 +46,8 @@ export function Contact() {
               </div>
             </motion.a>
           ))}
+
+          {/* Hidden microdata address block */}
           <div
             className="hidden"
             itemScope
@@ -59,6 +62,7 @@ export function Contact() {
           </div>
         </div>
 
+        {/* ✅ FIX: Use Maps Embed API (proper method, not deprecated ?output=embed) */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -67,12 +71,13 @@ export function Contact() {
           className="border border-gold/20 overflow-hidden h-full min-h-[400px]"
         >
           <iframe
-            title="ACG Car Travels — Location in Amalapuram, East Godavari, Andhra Pradesh"
-            src="https://www.google.com/maps?q=Door+No:+5-2,+147,+Sriramapuram,+Amalapuram,+Andhra+Pradesh&output=embed"
+            title="ACG Car Travels — Location Map: Door No 5-2, 147, Sriramapuram, Amalapuram, Andhra Pradesh"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=ACG+Car+Travels,Amalapuram,Andhra+Pradesh,India&center=16.5787,82.0061&zoom=15"
             className="w-full h-full min-h-[400px]"
             style={{ filter: "grayscale(0.6) invert(0.92) hue-rotate(180deg)" }}
             loading="lazy"
-            aria-label="Map showing ACG Car Travels location in Amalapuram, Andhra Pradesh"
+            referrerPolicy="no-referrer-when-downgrade"
+            aria-label="Map showing ACG Car Travels location in Amalapuram, Andhra Pradesh — Door No 5-2, 147, Sriramapuram"
           />
         </motion.div>
       </div>

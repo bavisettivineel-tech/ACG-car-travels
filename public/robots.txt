@@ -1,11 +1,9 @@
 User-agent: *
 Allow: /
-Crawl-delay: 2
 
-# Google — full access, low delay for fast indexing
+# Google — full access for fast indexing
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Googlebot-Image
 Allow: /
@@ -16,7 +14,6 @@ Allow: /
 # Bing / Yahoo
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 3
 
 User-agent: Slurp
 Allow: /
@@ -33,25 +30,21 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Facebook crawler (Open Graph)
+# Social media crawlers
 User-agent: facebookexternalhit
 Allow: /
 
-# Twitter / X crawler
 User-agent: Twitterbot
 Allow: /
 
-# WhatsApp link preview
 User-agent: WhatsApp
 Allow: /
 
-# LinkedIn crawler
 User-agent: LinkedInBot
 Allow: /
 
-# Disallow internal API paths
+# Disallow only internal API paths (NOT *.json — that would block webmanifest)
 Disallow: /api/
-Disallow: /*.json$
 Disallow: /node_modules/
 
 # Canonical sitemap location

@@ -16,6 +16,7 @@ interface CarItem {
   seats: string;
   features: string[];
   price: string;
+  priceNum: string;
   image: string;
   whatsapp: string;
   alt: string;
@@ -29,6 +30,7 @@ const cars: CarItem[] = [
     seats: "4 Seater",
     features: ["AC", "Music System", "GPS"],
     price: "₹12/km",
+    priceNum: "12",
     image: sedanImg,
     whatsapp: "Hi, I want to book a Sedan cab from ACG Car Travels Amalapuram",
     alt: "Sedan cab — Toyota Etios / Dzire — ACG Car Travels Amalapuram",
@@ -40,6 +42,7 @@ const cars: CarItem[] = [
     seats: "7 Seater",
     features: ["AC", "Push-back Seats", "Music", "GPS"],
     price: "₹16/km",
+    priceNum: "16",
     image: innovaImg,
     whatsapp: "Hi, I want to book an Innova Crysta from ACG Car Travels Amalapuram",
     alt: "Toyota Innova Crysta 7-seater rental — ACG Car Travels Amalapuram",
@@ -51,6 +54,7 @@ const cars: CarItem[] = [
     seats: "12–17 Seater",
     features: ["AC", "Push-back Seats", "Music", "Luggage Space"],
     price: "₹22/km",
+    priceNum: "22",
     image: tempoImg,
     whatsapp: "Hi, I want to book a Tempo Traveller from ACG Car Travels Amalapuram",
     alt: "Tempo Traveller 12-17 seater group cab — ACG Car Travels Amalapuram",
@@ -62,6 +66,7 @@ const cars: CarItem[] = [
     seats: "6+1 Seater",
     features: ["AC", "Push-back Seats", "Music", "Boot Space"],
     price: "₹14/km",
+    priceNum: "14",
     image: ertigaImg,
     whatsapp: "Hi, I want to book a Maruti Ertiga from ACG Car Travels Amalapuram",
     alt: "Maruti Ertiga 7-seater cab hire — ACG Car Travels Amalapuram",
@@ -73,6 +78,7 @@ const cars: CarItem[] = [
     seats: "4 Seater",
     features: ["AC", "Music System", "GPS", "Comfort Seats"],
     price: "₹12/km",
+    priceNum: "12",
     image: dezireImg,
     whatsapp: "Hi, I want to book a Maruti Dzire from ACG Car Travels Amalapuram",
     alt: "Maruti Dzire taxi Amalapuram — ACG Car Travels",
@@ -84,6 +90,7 @@ const cars: CarItem[] = [
     seats: "5 Seater",
     features: ["AC", "Music System", "GPS", "Comfortable Cabin"],
     price: "₹12/km",
+    priceNum: "12",
     image: balenoImg,
     whatsapp: "Hi, I want to book a Maruti Baleno from ACG Car Travels Amalapuram",
     alt: "Maruti Baleno cab rental Amalapuram — ACG Car Travels",
@@ -95,6 +102,7 @@ const cars: CarItem[] = [
     seats: "5 Seater",
     features: ["AC", "Music System", "GPS", "Smooth Ride"],
     price: "₹12/km",
+    priceNum: "12",
     image: glanzaImg,
     whatsapp: "Hi, I want to book a Toyota Glanza from ACG Car Travels Amalapuram",
     alt: "Toyota Glanza taxi Amalapuram — ACG Car Travels",
@@ -106,6 +114,7 @@ const cars: CarItem[] = [
     seats: "13–17 Seater",
     features: ["AC", "Push-back Seats", "Premium Audio", "LED TV Screen"],
     price: "₹26/km",
+    priceNum: "26",
     image: urbaniaImg,
     whatsapp: "Hi, I want to book a Force Urbania from ACG Car Travels Amalapuram",
     alt: "Force Urbania luxury van hire Amalapuram — ACG Car Travels",
@@ -123,10 +132,28 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
       transition={{ duration: 0.7, delay: index * 0.1 }}
       className="group relative bg-[#0f0f0f] border border-gold/15 hover:border-gold/60 transition-all duration-500 hover:-translate-y-2 hover:gold-glow-strong"
       itemScope
-      itemType="https://schema.org/Product"
+      itemType="https://schema.org/Service"
     >
-      <meta itemProp="name" content={`${car.name} — ${car.models} — ACG Car Travels Amalapuram`} />
-      <meta itemProp="description" content={`${car.name} (${car.seats}) available for hire in Amalapuram with AC, GPS and professional driver. Book with ACG Car Travels.`} />
+      {/* Service name — machine-readable */}
+      <meta
+        itemProp="name"
+        content={`${car.name} Cab Hire in Amalapuram — ${car.models} — ACG Car Travels`}
+      />
+      <meta
+        itemProp="description"
+        content={`${car.name} (${car.seats}) available for hire in Amalapuram at ${car.price} with AC, GPS and professional driver. Book with ACG Car Travels — call +91 7382352666.`}
+      />
+      <meta itemProp="serviceType" content="Car Rental, Cab Service, Car Travels" />
+      <meta itemProp="areaServed" content="Amalapuram, East Godavari, Andhra Pradesh" />
+      <link itemProp="url" href="https://www.acgcartravels.com/#fleet" />
+
+      {/* Provider info */}
+      <div itemScope itemType="https://schema.org/LocalBusiness" itemProp="provider">
+        <meta itemProp="name" content="ACG Car Travels" />
+        <meta itemProp="telephone" content="+917382352666" />
+        <meta itemProp="url" content="https://www.acgcartravels.com/" />
+      </div>
+
       <div className="absolute top-3 left-3 z-10 px-2.5 py-1 bg-black/70 backdrop-blur text-[10px] uppercase tracking-widest text-gold border border-gold/40">
         {car.type}
       </div>
@@ -138,12 +165,13 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
             "radial-gradient(ellipse at center top, rgba(201,168,76,0.22), transparent 60%), #060606",
         }}
       >
-        {/* Spotlight glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-full pointer-events-none"
-             style={{ background: "radial-gradient(ellipse at top, rgba(255,240,200,0.18), transparent 60%)" }} />
+        <div
+          className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-full pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at top, rgba(255,240,200,0.18), transparent 60%)" }}
+        />
         <img
           src={car.image}
-          alt={car.alt || `${car.name} — ${car.models} cab rental — ACG Car Travels Amalapuram`}
+          alt={car.alt}
           loading="lazy"
           width={1024}
           height={1024}
@@ -154,10 +182,10 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
       </div>
 
       <div className="p-6">
-        <h3 className="font-display text-2xl text-foreground" itemProp="name">{car.name}</h3>
-        <p className="text-sm text-foreground/50 mt-1" itemProp="model">{car.models}</p>
+        <h3 className="font-display text-2xl text-foreground">{car.name}</h3>
+        <p className="text-sm text-foreground/50 mt-1">{car.models}</p>
         <div className="flex items-center gap-3 mt-3 text-xs uppercase tracking-widest text-gold/80">
-          <span itemProp="vehicleSeatingCapacity">{car.seats}</span>
+          <span>{car.seats}</span>
         </div>
         <div className="flex flex-wrap gap-2 mt-4">
           {car.features.map((f) => (
@@ -169,14 +197,21 @@ function CarCard({ car, index }: { car: CarItem; index: number }) {
             </span>
           ))}
         </div>
+
+        {/* Offer schema — hidden, no price shown to user */}
+        <div className="hidden" itemScope itemType="https://schema.org/Offer" itemProp="offers">
+          <meta itemProp="priceCurrency" content="INR" />
+          <meta itemProp="availability" content="https://schema.org/InStock" />
+          <link itemProp="seller" href="https://www.acgcartravels.com/#localbusiness" />
+        </div>
+
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Book ${car.name} — ${car.models} — ACG Car Travels Amalapuram`}
+          aria-label={`Book ${car.name} — ${car.models} — ACG Car Travels Amalapuram on WhatsApp`}
           title={`Book ${car.name} on WhatsApp — ACG Car Travels`}
           className="shimmer mt-5 block text-center clip-parallelogram gold-gradient text-black font-bold uppercase tracking-widest py-3 text-sm"
-          itemProp="url"
         >
           Book Now via WhatsApp
         </a>
@@ -194,10 +229,20 @@ export function Fleet() {
       bgClass="bg-[#050505]"
       subtitle="Choose from 8 well-maintained AC vehicles — Sedan, Innova Crysta, Tempo Traveller, Force Urbania & more. ACG Car Travels is Amalapuram's nearest car travels, available 24/7."
     >
-      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6" itemScope itemType="https://schema.org/ItemList">
+      <div
+        className="grid md:grid-cols-2 xl:grid-cols-4 gap-6"
+        itemScope
+        itemType="https://schema.org/ItemList"
+      >
         <meta itemProp="name" content="ACG Car Travels Fleet — Car Rental Vehicles in Amalapuram" />
+        <meta itemProp="numberOfItems" content="8" />
         {cars.map((car, i) => (
-          <div key={car.name} itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+          <div
+            key={car.name}
+            itemProp="itemListElement"
+            itemScope
+            itemType="https://schema.org/ListItem"
+          >
             <meta itemProp="position" content={String(i + 1)} />
             <meta itemProp="name" content={`${car.name} — ${car.seats} — ACG Car Travels Amalapuram`} />
             <CarCard car={car} index={i} />

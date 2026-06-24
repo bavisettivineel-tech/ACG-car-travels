@@ -5,10 +5,10 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- ═══ Homepage — ACG Car Travels Amalapuram | Highest Priority ═══ -->
+  <!-- ═══ Homepage ═══ -->
   <url>
     <loc>https://www.acgcartravels.com/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -18,75 +18,52 @@
     </image:image>
   </url>
 
-  <!-- ═══ Fleet — Car Rental Fleet in Amalapuram ═══ -->
+  <!-- ═══ Taxi Service ═══ -->
   <url>
-    <loc>https://www.acgcartravels.com/#fleet</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.acgcartravels.com/taxi-service-amalapuram</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
-  <!-- ═══ Booking — Book Cab in Amalapuram ═══ -->
+  <!-- ═══ Outstation Cab ═══ -->
   <url>
-    <loc>https://www.acgcartravels.com/#booking</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- ═══ Packages — Car Travel Services Amalapuram ═══ -->
-  <url>
-    <loc>https://www.acgcartravels.com/#packages</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.acgcartravels.com/outstation-cab-amalapuram</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.93</priority>
   </url>
 
-  <!-- ═══ Routes — Outstation Routes from Amalapuram ═══ -->
+  <!-- ═══ Airport Transfer ═══ -->
   <url>
-    <loc>https://www.acgcartravels.com/#routes</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.acgcartravels.com/airport-transfer-amalapuram</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+  </url>
+
+  <!-- ═══ Innova Crysta ═══ -->
+  <url>
+    <loc>https://www.acgcartravels.com/innova-crysta-amalapuram</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
 
-  <!-- ═══ Testimonials — ACG Car Travels Reviews ═══ -->
+  <!-- ═══ Tempo Traveller ═══ -->
   <url>
-    <loc>https://www.acgcartravels.com/#testimonials</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://www.acgcartravels.com/tempo-traveller-amalapuram</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
   </url>
 
-  <!-- ═══ About — About ACG Car Travels Amalapuram ═══ -->
+  <!-- ═══ Tour Packages ═══ -->
   <url>
-    <loc>https://www.acgcartravels.com/#about</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://www.acgcartravels.com/tour-packages-amalapuram</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
-  </url>
-
-  <!-- ═══ Why Us — Why ACG Car Travels is #1 in Amalapuram ═══ -->
-  <url>
-    <loc>https://www.acgcartravels.com/#why</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.72</priority>
-  </url>
-
-  <!-- ═══ Contact — Contact ACG Car Travels Amalapuram ═══ -->
-  <url>
-    <loc>https://www.acgcartravels.com/#contact</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
-  </url>
-  <!-- ═══ FAQ — Frequently Asked Questions ═══ -->
-  <url>
-    <loc>https://www.acgcartravels.com/#faq</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.85</priority>
   </url>
 
 </urlset>

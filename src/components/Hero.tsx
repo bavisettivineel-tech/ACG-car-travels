@@ -25,7 +25,7 @@ export function Hero() {
     <section
       id="hero"
       ref={wrapRef}
-      aria-label="ACG Car Travels — Best Car Rental & Cab Service in Amalapuram, Andhra Pradesh"
+      aria-label="ACG Car Travels — Best Car Travels & Cab Service in Amalapuram, Andhra Pradesh"
       className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#050505] grain"
     >
       {/* Gold dust particles */}
@@ -50,7 +50,7 @@ export function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-[80vh] rounded-full pointer-events-none"
            style={{ background: "radial-gradient(ellipse at center, rgba(201,168,76,0.18), transparent 55%)" }} />
 
-      {/* Hero car image */}
+      {/* Hero car image — LCP element, fetchpriority high */}
       <motion.div
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -67,9 +67,11 @@ export function Hero() {
         >
           <img
             src={heroCar}
-            alt="Toyota Fortuner luxury SUV — ACG Car Travels premium fleet"
+            alt="Toyota Fortuner luxury SUV — ACG Car Travels premium fleet in Amalapuram"
             width={1920}
             height={1280}
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover object-center select-none pointer-events-none"
             style={{ filter: "drop-shadow(0 30px 60px rgba(201,168,76,0.25))" }}
             draggable={false}
@@ -99,17 +101,17 @@ export function Hero() {
             </span>
           </motion.div>
 
+          {/* ✅ FIX: H1 with real visible text — NOT aria-hidden. Critical for Google. */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.9 }}
             className="font-display font-black mt-6 leading-[0.92]"
             style={{ fontSize: "clamp(44px, 9vw, 110px)" }}
-            aria-label="ACG Car Travels — Best Car Rental & Cab Service in Amalapuram, Andhra Pradesh"
           >
-            <span className="block gold-text-gradient drop-shadow-[0_4px_30px_rgba(201,168,76,0.3)]" aria-hidden="true">ACG CAR</span>
-            <span className="block text-stroke-gold" aria-hidden="true">TRAVELS</span>
-            <span className="sr-only">ACG Car Travels — #1 Car Rental &amp; Cab Service in Amalapuram, Andhra Pradesh. Book Now: +91 7382352666</span>
+            <span className="block gold-text-gradient drop-shadow-[0_4px_30px_rgba(201,168,76,0.3)]">ACG CAR</span>
+            <span className="block text-stroke-gold">TRAVELS</span>
+            <span className="sr-only"> — #1 Car Travels &amp; Cab Service in Amalapuram, Andhra Pradesh. Book Now: +91 7382352666</span>
           </motion.h1>
 
           <motion.p
@@ -120,9 +122,17 @@ export function Hero() {
           >
             Premium Car Travels · Amalapuram, Andhra Pradesh
           </motion.p>
-          <p className="sr-only">
-            ACG Car Travels — Amalapuram's most trusted car rental and cab service. Outstation trips, airport transfers, wedding cars, local drops and tour packages. Fleet: Sedan, Innova Crysta, Tempo Traveller, Force Urbania, Maruti Dzire, Maruti Baleno, Toyota Glanza, Maruti Ertiga. Available 24/7. Call +91 7382352666.
-          </p>
+
+          {/* Visible SEO-rich subtext — crawlable, not hidden */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.25, duration: 0.8 }}
+            className="mt-3 text-sm text-foreground/55 leading-relaxed max-w-lg"
+          >
+            Amalapuram's nearest car travels &amp; cab service. Outstation trips, airport transfers, wedding cars &amp; tour packages.
+            Available <strong className="text-gold/80">24/7</strong> — <a href="tel:+917382352666" className="text-gold hover:text-gold-light underline underline-offset-2">+91 7382352666</a>
+          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -160,7 +170,7 @@ export function Hero() {
             ["5.0★", "Google Rating"],
             ["500+", "Happy Customers"],
             ["24/7", "Available"],
-            ["4", "Vehicle Types"],
+            ["8", "Vehicle Types"],
           ].map(([num, label], i, arr) => (
             <div key={label} className="flex items-center gap-6">
               <div className="text-center md:text-left">
