@@ -72,7 +72,7 @@ export function Contact() {
         >
           <iframe
             title="ACG Car Travels — Location Map: Door No 5-2, 147, Sriramapuram, Amalapuram, Andhra Pradesh"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=ACG+Car+Travels,Amalapuram,Andhra+Pradesh,India&center=16.5787,82.0061&zoom=15"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7647.900447979705!2d81.99718668991932!3d16.57901300865143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37efec795c9b65%3A0xa048beef324ef7d3!2sACG%20TAXI%20SERVICE%20AMALAPURAM!5e0!3m2!1sen!2sin!4v1782315729830!5m2!1sen!2sin"
             className="w-full h-full min-h-[400px]"
             style={{ filter: "grayscale(0.6) invert(0.92) hue-rotate(180deg)" }}
             loading="lazy"
