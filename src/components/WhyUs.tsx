@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Star, Clock, Car, User, MapPin, IndianRupee, ShieldCheck, Phone } from "lucide-react";
 
 const items = [
-  { icon: Star, title: "Perfect 5.0 Rating", desc: "58 verified Google reviews with perfect 5-star rating" },
+  { icon: Star, title: "Perfect 5.0 Rating", desc: "200\+ verified Google reviews with perfect 5-star rating" },
   { icon: Clock, title: "24/7 Availability", desc: "Available round the clock — early morning or late night" },
   { icon: Car, title: "Premium AC Cars", desc: "All vehicles fully air-conditioned and regularly serviced" },
   { icon: User, title: "Expert Drivers", desc: "Licensed experienced polite chauffeurs who know every route" },

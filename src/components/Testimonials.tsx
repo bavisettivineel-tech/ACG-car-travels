@@ -35,7 +35,7 @@ export function Testimonials() {
       id="testimonials"
       label="Customer Reviews"
       title="What Passengers Say — ACG Car Travels"
-      subtitle="Real reviews from real passengers. Amalapuram's most trusted car travels service rated 5.0 ★ on Google with 58 verified reviews."
+      subtitle="Real reviews from real passengers. Amalapuram's most trusted car travels service rated 5.0 ★ on Google with 200\+ verified reviews."
       bgClass="bg-[#050505]"
     >
       {/*
@@ -64,8 +64,8 @@ export function Testimonials() {
           <meta itemProp="ratingValue" content="5.0" />
           <meta itemProp="bestRating" content="5" />
           <meta itemProp="worstRating" content="1" />
-          <meta itemProp="ratingCount" content="58" />
-          <meta itemProp="reviewCount" content="58" />
+          <meta itemProp="ratingCount" content="200" />
+          <meta itemProp="reviewCount" content="200" />
         </div>
 
         {/* ✅ Review cards correctly nested INSIDE LocalBusiness via itemProp="review" */}
@@ -142,7 +142,7 @@ export function Testimonials() {
         <div className="mt-12 text-center">
           <p className="text-foreground/50 text-sm">
             <span className="text-gold font-bold text-lg">★ 5.0</span>&nbsp;based on&nbsp;
-            <span className="text-gold font-bold">58 Google Reviews</span>&nbsp;— Amalapuram's highest-rated car travels service
+            <span className="text-gold font-bold">200\+ Google Reviews</span>&nbsp;— Amalapuram's highest-rated car travels service
           </p>
           <a
             href="https://wa.me/917382352666?text=Hi, I want to book a cab with ACG Car Travels Amalapuram"

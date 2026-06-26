@@ -9,7 +9,7 @@ const schema = {
   "url": "https://www.acgcartravels.com/tempo-traveller-amalapuram",
   "telephone": "+917382352666",
   "address": { "@type": "PostalAddress", "streetAddress": "Door No: 5-2, 147, Sriramapuram", "addressLocality": "Amalapuram", "addressRegion": "Andhra Pradesh", "postalCode": "533201", "addressCountry": "IN" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "58", "bestRating": "5", "worstRating": "1" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "200", "bestRating": "5", "worstRating": "1" },
   "areaServed": "Amalapuram, East Godavari, Andhra Pradesh",
 };
 

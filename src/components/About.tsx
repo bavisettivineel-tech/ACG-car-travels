@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Star, Clock, Car, UserCheck, MapPin, ShieldCheck } from "lucide-react";
 
 const cards = [
-  { icon: Star, title: "5★ Google Rating", desc: "Perfect 5.0 rating on Google with 58 verified reviews — Amalapuram's most trusted car travels" },
+  { icon: Star, title: "5★ Google Rating", desc: "Perfect 5.0 rating on Google with 200\+ verified reviews — Amalapuram's most trusted car travels" },
   { icon: Clock, title: "24/7 Availability", desc: "Round the clock availability for all travel needs — early morning or late night, we are always ready" },
   { icon: Car, title: "AC Vehicles", desc: "All 8 vehicles fully air-conditioned and regularly serviced — sedan, SUV, tempo, luxury van" },
   { icon: UserCheck, title: "Pro Drivers", desc: "Licensed, experienced and courteous chauffeurs who know every route across Andhra Pradesh" },
@@ -34,7 +34,7 @@ export function About() {
             Covering <strong>Amalapuram</strong> to <strong>Hyderabad</strong>,{" "}
             <strong>Visakhapatnam (Vizag)</strong>, <strong>Vijayawada</strong>, <strong>Tirupati</strong>,{" "}
             <strong>Rajahmundry</strong> and beyond. With a perfect{" "}
-            <strong>5.0 Google Rating</strong> and 58 verified reviews, we are the{" "}
+            <strong>5.0 Google Rating</strong> and 200\+ verified reviews, we are the{" "}
             <strong>#1 car travels in Amalapuram</strong>, East Godavari district.
           </p>
           <p className="text-foreground/65 text-base leading-relaxed mb-8">
@@ -74,13 +74,13 @@ export function About() {
                 </div>
               </div>
               <div className="border-l border-gold/30 pl-6">
-                <div className="font-display text-2xl text-foreground" itemProp="reviewCount">58 Reviews</div>
+                <div className="font-display text-2xl text-foreground" itemProp="reviewCount">200\+ Reviews</div>
                 <div className="text-sm text-foreground/60 uppercase tracking-widest mt-1">
                   Verified Google Reviews
                 </div>
                 <meta itemProp="bestRating" content="5" />
                 <meta itemProp="worstRating" content="1" />
-                <meta itemProp="ratingCount" content="58" />
+                <meta itemProp="ratingCount" content="200" />
               </div>
             </div>
           </div>

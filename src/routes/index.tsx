@@ -68,7 +68,7 @@ function Index() {
               {[
                 {
                   q: "Which is the best car travels near Amalapuram?",
-                  a: "ACG Car Travels is the best and nearest car travels in Amalapuram with a perfect 5.0 Google rating from 58 verified reviews. We are available 24/7 for local drops, outstation trips, airport transfers, wedding cars and tour packages. Call +91 7382352666.",
+                  a: "ACG Car Travels is the best and nearest car travels in Amalapuram with a perfect 5.0 Google rating from 200\+ verified reviews. We are available 24/7 for local drops, outstation trips, airport transfers, wedding cars and tour packages. Call +91 7382352666.",
                 },
                 {
                   q: "What is ACG Car Travels — Amalapuram's #1 car travels?",
