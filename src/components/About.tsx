@@ -74,7 +74,7 @@ export function About() {
                 </div>
               </div>
               <div className="border-l border-gold/30 pl-6">
-                <div className="font-display text-2xl text-foreground" itemProp="reviewCount">200\+ Reviews</div>
+                <div className="font-display text-2xl text-foreground" itemProp="reviewCount">200+</div>
                 <div className="text-sm text-foreground/60 uppercase tracking-widest mt-1">
                   Verified Google Reviews
                 </div>

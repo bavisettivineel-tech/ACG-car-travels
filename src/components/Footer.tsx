@@ -180,8 +180,8 @@ export function Footer() {
             <span className="text-gold/60">Best Car Travels &amp; Cab Service Amalapuram</span>
           </div>
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1 text-gold" aria-label="5 star Google rating with 200\+ reviews">
-              <Star size={12} fill="currentColor" aria-hidden="true" /> 5.0 · 200\+ Google Reviews
+            <span className="flex items-center gap-1 text-gold" aria-label="5 star Google rating with 200+ reviews">
+              <Star size={12} fill="currentColor" aria-hidden="true" /> 5.0 · 200+
             </span>
             <a
               href="tel:+917382352666"

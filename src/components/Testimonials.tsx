@@ -142,7 +142,7 @@ export function Testimonials() {
         <div className="mt-12 text-center">
           <p className="text-foreground/50 text-sm">
             <span className="text-gold font-bold text-lg">★ 5.0</span>&nbsp;based on&nbsp;
-            <span className="text-gold font-bold">200\+ Google Reviews</span>&nbsp;— Amalapuram's highest-rated car travels service
+            <span className="text-gold font-bold">200+</span>&nbsp;— Amalapuram's highest-rated car travels service
           </p>
           <a
             href="https://wa.me/917382352666?text=Hi, I want to book a cab with ACG Car Travels Amalapuram"
